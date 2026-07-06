@@ -67,6 +67,8 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(0,0,0,.85
 .hero-stats b{display:block;font-family:var(--display);font-size:2.2rem;font-weight:800;color:var(--naranja);line-height:1}
 .hero-stats span{font-size:.8rem;color:var(--gris);text-transform:uppercase;letter-spacing:.1em}
 .video-note{position:absolute;bottom:24px;right:24px;z-index:3;font-size:.72rem;color:#666;border:1px dashed #444;padding:6px 10px;letter-spacing:.05em}
+.hero-creds{margin-top:22px;display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:.76rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#c4c4c4}
+.hero-creds .tri{color:var(--naranja);font-size:.55rem}
 
 /* ===== Barra novedades ===== */
 .news{background:var(--naranja);color:#000;padding:14px 0;border:none}
@@ -86,6 +88,14 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(0,0,0,.85
 .serv a{color:var(--naranja);font-weight:700;font-size:.85rem;text-transform:uppercase;letter-spacing:.1em}
 .serv a::after{content:" →"}
 .serv .ico{width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:rgba(255,107,0,.12);color:var(--naranja);font-size:1.3rem;clip-path:polygon(0 0,100% 0,100% 75%,75% 100%,0 100%)}
+.serv-spec{color:var(--naranja);font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;opacity:.85;margin-top:-6px}
+.serv-full{grid-column:1/-1;flex-direction:row;align-items:center;gap:30px;min-height:auto}
+.serv-full .ico{flex:none}
+.serv-full-text{flex:1;display:flex;flex-direction:column;gap:8px}
+.serv-full a{flex:none}
+@media(max-width:700px){
+  .serv-full{flex-direction:column;align-items:flex-start}
+}
 
 /* ===== Cifras ===== */
 .cifras{background:var(--panel);position:relative}
@@ -146,6 +156,15 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(0,0,0,.85
 .rec h3{font-family:var(--display);font-size:1.35rem;font-weight:700;text-transform:uppercase;line-height:1.15}
 .rec p{color:var(--gris);font-size:.88rem;margin:8px 0 12px}
 .rec a{color:var(--naranja);font-weight:800;font-size:.85rem;text-transform:uppercase;letter-spacing:.1em}
+
+/* ===== Sectores ===== */
+.sector-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:50px}
+.sector-card{position:relative;aspect-ratio:4/3;overflow:hidden;border:1px solid var(--linea);display:flex;align-items:flex-end}
+.sector-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.45;transition:transform .4s,opacity .3s}
+.sector-card::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.3) 0%,rgba(0,0,0,.88) 100%);z-index:1}
+.sector-card:hover img{transform:scale(1.06);opacity:.6}
+.sector-card h3{position:relative;z-index:2;padding:22px;font-family:var(--display);font-weight:800;font-size:1.3rem;text-transform:uppercase;line-height:1.15}
+.sector-card h3::before{content:"";display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:10px solid var(--naranja);margin-bottom:8px}
 
 /* ===== Testimonios ===== */
 .testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:50px}
@@ -241,6 +260,7 @@ footer{border-top:2px solid var(--naranja);padding:70px 0 30px;background:#05050
     <span class="hero-tag">▲ Esri Partner · Bogotá, Colombia</span>
     <h1>Convertimos el territorio en <em>decisiones precisas</em></h1>
     <p>LiDAR, fotogrametría, mobile mapping, Gaussian Splatting y soluciones SIG con drones profesionales de última generación. Más de 12 años transformando datos en resultados.</p>
+    <p class="hero-creds">Esri Partner <span class="tri">▲</span> 12+ años <span class="tri">▲</span> 170+ proyectos <span class="tri">▲</span> Cobertura nacional</p>
     <div class="hero-ctas">
       <a class="btn btn-naranja" href="#servicios">Conoce nuestros servicios</a>
       <a class="btn btn-ghost" href="#contacto">Solicita una cotización</a>
@@ -271,15 +291,15 @@ footer{border-top:2px solid var(--naranja);padding:70px 0 30px;background:#05050
     <h2 class="title">11 líneas de servicio,<br>una sola precisión</h2>
     <p class="sub">Cada servicio integra equipos de última generación con la plataforma ESRI para captura, procesamiento y análisis geoespacial confiable.</p>
     <div class="serv-grid">
-      <article class="serv"><div class="ico">✈</div><h3>Drones profesionales</h3><p>Distribución y operación de eBee TAC, eBee VISION, Matrice 350 RTK y Mavic 3 Enterprise, con capacitación, soporte y repuestos.</p><a href="#">Ver servicio</a></article>
-      <article class="serv"><div class="ico">◉</div><h3>Levantamientos LiDAR</h3><p>Nubes de puntos de alta precisión con sensor Zenmuse L1 + RGB para ingeniería, cartografía, topografía e industria.</p><a href="#">Ver servicio</a></article>
-      <article class="serv"><div class="ico">🚐</div><h3>Mobile Mapping</h3><p>Captura masiva de corredores viales y entornos urbanos con Trimble MX50: nubes de puntos e imágenes 360° georreferenciadas.</p><a href="#">Ver servicio</a></article>
-      <article class="serv"><div class="ico">▦</div><h3>Fotogrametría</h3><p>Ortofotos de alta resolución, modelos digitales de terreno y superficie para proyectos de cualquier escala.</p><a href="#">Ver servicio</a></article>
-      <article class="serv"><div class="ico">✦</div><h3>Gaussian Splatting</h3><p>Recorridos virtuales fotorrealistas y gemelos digitales navegables a partir de captura de realidad de última generación.</p><a href="#">Ver servicio</a></article>
-      <article class="serv"><div class="ico">⬡</div><h3>Escaneo láser 3D & BIM</h3><p>Digitalización de estructuras e infraestructura con escáner láser terrestre y modelado BIM as-built.</p><a href="#">Ver servicio</a></article>
-      <article class="serv"><div class="ico">🌐</div><h3>SIG · Esri Partner</h3><p>Implementación de soluciones ArcGIS, análisis espacial avanzado y tableros de control para la toma de decisiones.</p><a href="#">Ver servicio</a></article>
-      <article class="serv"><div class="ico">△</div><h3>Topografía & Catastro</h3><p>Levantamientos topográficos de precisión y gestión catastral multipropósito con equipos GNSS y estación total.</p><a href="#">Ver servicio</a></article>
-      <article class="serv"><div class="ico">⚙</div><h3>Venta de equipos</h3><p>Comercialización de drones, sensores y accesorios con garantía, capacitación y soporte técnico local.</p><a href="#">Ver todos los servicios →</a></article>
+      <article class="serv"><div class="ico">✈</div><h3>Drones profesionales</h3><p>Distribución y operación de eBee TAC, eBee VISION, Matrice 350 RTK y Mavic 3 Enterprise, con capacitación, soporte y repuestos.</p><p class="serv-spec">eBee TAC · eBee VISION · Matrice 350 RTK · Mavic 3 Enterprise</p><a href="#">Ver servicio</a></article>
+      <article class="serv"><div class="ico">◉</div><h3>Levantamientos LiDAR</h3><p>Nubes de puntos de alta precisión con sensor Zenmuse L1 + RGB para ingeniería, cartografía, topografía e industria.</p><p class="serv-spec">Sensor Zenmuse L1 · Nube de puntos RGB de alta densidad</p><a href="#">Ver servicio</a></article>
+      <article class="serv"><div class="ico">🚐</div><h3>Mobile Mapping</h3><p>Captura masiva de corredores viales y entornos urbanos con Trimble MX50: nubes de puntos e imágenes 360° georreferenciadas.</p><p class="serv-spec">Trimble MX50 · Imágenes 360° georreferenciadas</p><a href="#">Ver servicio</a></article>
+      <article class="serv"><div class="ico">▦</div><h3>Fotogrametría</h3><p>Ortofotos de alta resolución, modelos digitales de terreno y superficie para proyectos de cualquier escala.</p><p class="serv-spec">[SPEC PENDIENTE]</p><a href="#">Ver servicio</a></article>
+      <article class="serv"><div class="ico">✦</div><h3>Gaussian Splatting</h3><p>Recorridos virtuales fotorrealistas y gemelos digitales navegables a partir de captura de realidad de última generación.</p><p class="serv-spec">[SPEC PENDIENTE]</p><a href="#">Ver servicio</a></article>
+      <article class="serv"><div class="ico">⬡</div><h3>Escaneo láser 3D & BIM</h3><p>Digitalización de estructuras e infraestructura con escáner láser terrestre y modelado BIM as-built.</p><p class="serv-spec">[SPEC PENDIENTE]</p><a href="#">Ver servicio</a></article>
+      <article class="serv"><div class="ico">🌐</div><h3>SIG · Esri Partner</h3><p>Implementación de soluciones ArcGIS, análisis espacial avanzado y tableros de control para la toma de decisiones.</p><p class="serv-spec">[SPEC PENDIENTE]</p><a href="#">Ver servicio</a></article>
+      <article class="serv"><div class="ico">△</div><h3>Topografía & Catastro</h3><p>Levantamientos topográficos de precisión y gestión catastral multipropósito con equipos GNSS y estación total.</p><p class="serv-spec">[SPEC PENDIENTE]</p><a href="#">Ver servicio</a></article>
+      <article class="serv serv-full"><div class="ico">⚙</div><div class="serv-full-text"><h3>Venta de equipos</h3><p>Comercialización de drones, sensores y accesorios con garantía, capacitación y soporte técnico local.</p><p class="serv-spec">[SPEC PENDIENTE]</p></div><a href="#">Ver todos los servicios</a></article>
     </div>
   </div>
 </section>
@@ -326,6 +346,24 @@ footer{border-top:2px solid var(--naranja);padding:70px 0 30px;background:#05050
       <figure class="video-card"><img src="https://www.ecompass.co/wp-content/uploads/2025/12/Proyectos_destacados.png" alt=""><div class="play"></div><figcaption>Recorrido virtual — Gaussian Splatting</figcaption></figure>
     </div>
     <p style="color:#666;font-size:.8rem;margin-top:14px">[ PLACEHOLDER: cada tarjeta abre el video real desde el canal de YouTube @ecompass_oficial ]</p>
+  </div>
+</section>
+
+<!-- ============ SECTORES ============ -->
+<section id="sectores">
+  <div class="container">
+    <div class="eyebrow">Sectores</div>
+    <h2 class="title">Sectores que atendemos</h2>
+    <p class="sub">Soluciones geoespaciales adaptadas a los retos específicos de cada industria.</p>
+    <div class="sector-grid">
+      <article class="sector-card"><img src="https://www.ecompass.co/wp-content/uploads/2025/02/Servicio-01-Ala-Fija.png" alt="Infraestructura vial"><h3>Infraestructura vial</h3></article>
+      <article class="sector-card"><img src="https://www.ecompass.co/wp-content/uploads/2025/02/Servicio-03-PROCESAMIENTO-DE-INFORMACION-GEOESPACIAL.png" alt="Catastro y gestión territorial"><h3>Catastro y gestión territorial</h3></article>
+      <article class="sector-card"><img src="https://www.ecompass.co/wp-content/uploads/2025/02/Servicio-02-LEVANTAMIENTOS-LIDAR-MULTIROTOR.png" alt="Minería y energía"><h3>Minería y energía</h3></article>
+      <article class="sector-card"><img src="https://www.ecompass.co/wp-content/uploads/2025/12/Proyectos_destacados.png" alt="Construcción y BIM"><h3>Construcción y BIM</h3></article>
+      <article class="sector-card"><img src="https://www.ecompass.co/wp-content/uploads/2025/11/BANER-EXPODEFENSA-scaled.png" alt="Defensa y seguridad"><h3>Defensa y seguridad</h3></article>
+      <article class="sector-card"><img src="https://www.ecompass.co/wp-content/uploads/2025/02/Servicio-02-LEVANTAMIENTOS-LIDAR-MULTIROTOR.png" alt="Agricultura de precisión"><h3>Agricultura de precisión</h3></article>
+    </div>
+    <p style="color:#666;font-size:.8rem;margin-top:14px">[ PLACEHOLDER: reemplazar por fotografías reales de cada sector ]</p>
   </div>
 </section>
 
