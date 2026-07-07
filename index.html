@@ -150,11 +150,16 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,2
 
 /* ===== Webinars ===== */
 .webinar-hero{display:grid;grid-template-columns:1.3fr 1fr;gap:2px;background:var(--linea);border:1px solid var(--linea);margin-top:50px}
-.webinar-main{background:linear-gradient(135deg,#fff1e2 0%,var(--panel) 60%);padding:44px}
+.webinar-main{display:grid;grid-template-columns:1fr 1.4fr;background:linear-gradient(135deg,#fff1e2 0%,var(--panel) 60%);overflow:hidden}
 .badge{display:inline-block;background:var(--naranja);color:#000;font-weight:800;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;padding:5px 12px;margin-bottom:18px}
+.webinar-thumb{position:relative}
+.webinar-thumb img{width:100%;height:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.webinar-badge-corner{position:absolute;top:18px;left:0;background:var(--naranja);color:#000;font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:.04em;font-size:.78rem;padding:8px 20px 8px 16px;clip-path:polygon(0 0,100% 0,calc(100% - 14px) 100%,0 100%)}
+.webinar-info{padding:44px;display:flex;flex-direction:column;align-items:flex-start;gap:4px}
 .webinar-main h3{font-family:var(--display);font-size:2.1rem;font-weight:800;text-transform:uppercase;line-height:1.05}
 .webinar-main .meta{display:flex;gap:22px;margin:18px 0 24px;color:var(--gris);font-size:.9rem;font-weight:600;flex-wrap:wrap}
 .webinar-main .meta b{color:var(--naranja)}
+@media(max-width:900px){.webinar-main{grid-template-columns:1fr}.webinar-info{padding:28px 24px}}
 .webinar-past{background:var(--panel);padding:34px 30px;display:flex;flex-direction:column;gap:0}
 .webinar-past h4{font-family:var(--display);text-transform:uppercase;font-size:1.15rem;color:var(--gris);margin-bottom:14px;letter-spacing:.08em}
 .past-item{display:flex;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--linea)}
@@ -409,17 +414,27 @@ footer{border-top:2px solid var(--naranja);padding:70px 0 30px;background:#05050
     <div class="eyebrow">Formación en vivo</div>
     <h2 class="title">Webinars eCompass</h2>
     <p class="sub">Aprende de nuestros especialistas: tecnología, casos de uso y demostraciones en vivo. Cupos limitados.</p>
+    <!-- Para actualizar el webinar destacado:
+         1) Imagen: reemplaza img/webinar-01.jpg (miniatura 16:9)
+         2) Título: edita el texto del elemento con clase webinar-info, título h3, más abajo
+         3) Fecha y hora: edita el contenido de la clase "meta", más abajo
+         4) Enlace: cambia el atributo href del elemento con clase webinar-main, más abajo -->
     <div class="webinar-hero" style="grid-template-columns:1fr">
-      <div class="webinar-main">
-        <span class="badge">Próximo webinar · En vivo</span>
-        <h3>LiDAR con drones: de la captura a la nube de puntos lista para ingeniería</h3>
-        <div class="meta">
-          <span>📅 <b>Jueves 23 de julio</b> · 2026</span>
-          <span>🕓 <b>4:00 p.m.</b> COT</span>
-          <span>💻 <b>Gratuito</b> vía Zoom</span>
+      <a class="webinar-main" href="webinars.html">
+        <div class="webinar-thumb">
+          <img src="img/webinar-01.jpg" alt="Miniatura del webinar: Reactivando tu eBee X, de cero a misión completa en 30 minutos" loading="lazy">
+          <span class="webinar-badge-corner">Próximo webinar</span>
         </div>
-        <a class="btn btn-naranja" href="webinars.html">Reservar mi cupo</a>
-      </div>
+        <div class="webinar-info">
+          <h3>Reactivando tu eBee X: de cero a misión completa en 30 minutos</h3>
+          <div class="meta">
+            <span>📅 <b>21 de mayo</b></span>
+            <span>🕓 <b>9:00 a.m.</b> COT</span>
+            <span>💻 <b>Gratuito</b> vía Zoom</span>
+          </div>
+          <span class="btn btn-naranja">Reservar mi cupo</span>
+        </div>
+      </a>
     </div>
     <div class="section-more"><a class="btn btn-ghost" href="webinars.html">Ver grabaciones anteriores</a></div>
   </div>
