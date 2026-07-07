@@ -81,12 +81,21 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,2
 .hero-creds{margin-top:22px;display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:.76rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#c4c4c4}
 .hero-creds .tri{color:var(--naranja);font-size:.55rem}
 
-/* ===== Barra novedades ===== */
-.news{background:var(--naranja);color:#000;padding:14px 0;border:none}
-.news .container{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-.news b{font-family:var(--display);text-transform:uppercase;font-size:1.1rem;letter-spacing:.03em;white-space:nowrap}
-.news p{font-weight:600;font-size:.92rem;flex:1;min-width:260px}
-.news a{font-weight:800;text-decoration:underline;white-space:nowrap}
+/* ===== Banner de noticias ===== */
+.news-banner{display:block;position:relative;min-height:440px;overflow:hidden;background:var(--oscuro);color:#fff}
+.news-banner::before{content:"";position:absolute;inset:0;background:url('img/banner-noticia.jpg') right top/cover no-repeat}
+.news-banner::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.9) 0%,rgba(0,0,0,.62) 38%,rgba(0,0,0,.18) 72%,rgba(0,0,0,0) 100%)}
+.news-banner-inner{position:relative;z-index:2;min-height:440px;padding:60px 0;display:flex;flex-direction:column;justify-content:center;gap:14px;max-width:620px}
+.news-banner-inner .eyebrow{margin-bottom:0}
+.news-banner-title{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(1.3rem,3vw,2.2rem);line-height:1.18;color:#fff}
+.news-banner-text{font-family:var(--body);font-weight:400;font-size:.92rem;line-height:1.55;color:rgba(255,255,255,.82);max-width:560px}
+.news-banner-btn{align-self:flex-start;margin-top:6px}
+@media(max-width:700px){
+  .news-banner{min-height:360px}
+  .news-banner-inner{min-height:360px;padding:40px 0}
+  .news-banner-title{font-size:clamp(1.05rem,4.5vw,1.4rem)}
+  .news-banner-text-2{display:none}
+}
 
 /* ===== Servicios ===== */
 .serv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2px;background:var(--linea);margin-top:50px;border:1px solid var(--linea)}
@@ -319,14 +328,20 @@ footer{border-top:2px solid var(--naranja);padding:70px 0 30px;background:#05050
   </div>
 </section>
 
-<!-- ============ BARRA NOVEDADES ============ -->
-<div class="news">
-  <div class="container">
-    <b>▲ Lo más reciente</b>
-    <p>Presentamos sistemas tácticos de nueva generación en Expodefensa 2025 con los drones eBee TAC y eBee VISION, impulsados por tecnología ESRI.</p>
-    <a href="https://www.expodefensa.com.co/es/" target="_blank" rel="noopener">Ver más →</a>
+<!-- ============ BANNER DE NOTICIAS ============ -->
+<!-- Para publicar una noticia nueva, actualiza estos 3 puntos:
+     1) Imagen de fondo: reemplaza img/banner-noticia.jpg (o cambia la url en la regla CSS .news-banner::before)
+     2) Titular: edita el texto del elemento con clase news-banner-title, más abajo
+     3) Enlace: cambia el atributo href del elemento con clase news-banner, más abajo -->
+<a class="news-banner" href="mobile-mapping.html">
+  <div class="container news-banner-inner">
+    <div class="eyebrow">Mapeo móvil e inteligencia geoespacial</div>
+    <h3 class="news-banner-title">Captura 3D para la Gestión Inteligente del Territorio</h3>
+    <p class="news-banner-text">Capturamos información tridimensional de alta densidad en campo mediante soluciones de mapeo móvil, integrando nubes de puntos, imágenes panorámicas y datos georreferenciados para documentar infraestructura, activos, vías, edificaciones y espacios complejos.</p>
+    <p class="news-banner-text news-banner-text-2">Convertimos cada recorrido en información geoespacial lista para análisis, inventario, gestión de activos, visualización 3D y toma de decisiones en entornos GIS.</p>
+    <span class="btn btn-naranja news-banner-btn">Conoce el servicio →</span>
   </div>
-</div>
+</a>
 
 <!-- ============ SERVICIOS (ADELANTO) ============ -->
 <section id="servicios">

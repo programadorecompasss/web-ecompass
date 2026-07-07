@@ -7,23 +7,16 @@
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-<title>Servicios | eCompass</title>
+<title>Mobile Mapping | eCompass</title>
+<meta name="description" content="Mapeo móvil e inteligencia geoespacial: captura 3D de alta densidad con Trimble MX50 para infraestructura, activos, vías y espacios complejos.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --fondo:#ffffff;
-  --panel:#f5f5f4;
-  --panel2:#ececec;
-  --oscuro:#0d0d0d;
-  --naranja:#FF6B00;
-  --naranja-osc:#cc5500;
-  --texto:#111111;
-  --gris:#5c5c5c;
-  --linea:#e2e2e0;
-  --display:'Barlow Condensed',sans-serif;
-  --body:'Barlow',sans-serif;
+  --fondo:#ffffff;--panel:#f5f5f4;--panel2:#ececec;--oscuro:#0d0d0d;
+  --naranja:#FF6B00;--naranja-osc:#cc5500;--texto:#111111;--gris:#5c5c5c;--linea:#e2e2e0;
+  --display:'Barlow Condensed',sans-serif;--body:'Barlow',sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -31,9 +24,9 @@ body{background:var(--fondo);color:var(--texto);font-family:var(--body);line-hei
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 .container{max-width:1200px;margin:0 auto;padding:0 24px}
-.eyebrow{display:flex;align-items:center;gap:10px;font-family:var(--body);font-weight:700;font-size:.8rem;letter-spacing:.25em;text-transform:uppercase;color:var(--naranja);margin-bottom:14px}
+.eyebrow{display:flex;align-items:center;gap:10px;font-weight:700;font-size:.8rem;letter-spacing:.25em;text-transform:uppercase;color:var(--naranja);margin-bottom:14px}
 .eyebrow::before{content:"";width:0;height:0;border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:12px solid var(--naranja)}
-h2.title{font-family:var(--display);font-weight:800;font-size:clamp(2rem,4.5vw,3.4rem);line-height:1.05;text-transform:uppercase;letter-spacing:.01em}
+h2.title{font-family:var(--display);font-weight:800;font-size:clamp(2rem,4.5vw,3.4rem);line-height:1.05;text-transform:uppercase}
 .sub{color:var(--gris);max-width:640px;margin-top:12px;font-size:1.05rem}
 section{padding:90px 0;border-top:1px solid var(--linea)}
 header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--linea)}
@@ -46,39 +39,36 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,2
 .nav .cta-nav:hover{background:var(--texto);color:#fff}
 .burger{display:none;background:none;border:none;color:var(--texto);font-size:1.6rem;cursor:pointer}
 .page-hero{padding:170px 0 60px;border-top:none}
-.btn{display:inline-block;font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:1.05rem;padding:15px 34px;clip-path:polygon(12px 0,100% 0,calc(100% - 12px) 100%,0 100%);transition:transform .15s,background .2s,color .2s}
+
+/* ===== Botones ===== */
+.btn{display:inline-block;font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:1.05rem;padding:15px 34px;clip-path:polygon(12px 0,100% 0,calc(100% - 12px) 100%,0 100%);transition:transform .15s,background .2s,color .2s;border:none;cursor:pointer}
 .btn:hover{transform:translateY(-2px)}
 .btn-naranja{background:var(--naranja);color:#000}
 .btn-naranja:hover{background:#fff;box-shadow:inset 0 0 0 2px var(--texto)}
 .btn-ghost{background:transparent;color:var(--texto);box-shadow:inset 0 0 0 2px var(--texto)}
 .btn-ghost:hover{background:var(--texto);color:#fff}
-.serv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2px;background:var(--linea);margin-top:50px;border:1px solid var(--linea)}
-.serv{background:var(--panel);padding:34px 28px;position:relative;transition:background .25s;display:flex;flex-direction:column;gap:12px;min-height:230px}
-.serv:hover{background:var(--panel2)}
-.serv::before{content:"";position:absolute;top:0;left:0;width:0;height:3px;background:var(--naranja);transition:width .3s}
-.serv:hover::before{width:100%}
-.serv h3{font-family:var(--display);font-weight:700;font-size:1.5rem;text-transform:uppercase;line-height:1.1}
-.serv p{color:var(--gris);font-size:.92rem;flex:1}
-.serv a{color:var(--naranja);font-weight:700;font-size:.85rem;text-transform:uppercase;letter-spacing:.1em}
-.serv a::after{content:" →"}
-.serv a.serv-secondary{color:var(--gris);font-size:.78rem;margin-top:-6px}
-.serv .ico{width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:rgba(255,107,0,.12);color:var(--naranja);font-size:1.3rem;clip-path:polygon(0 0,100% 0,100% 75%,75% 100%,0 100%)}
-.serv-spec{color:var(--naranja);font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;opacity:.85;margin-top:-6px}
-.serv-thumb{aspect-ratio:16/9;margin:-34px -28px 6px;overflow:hidden}
-.serv-thumb img{width:100%;height:100%;object-fit:cover;filter:grayscale(15%)}
-.serv-full{grid-column:1/-1;flex-direction:row;align-items:center;gap:30px;min-height:auto}
-.serv-full .ico{flex:none}
-.serv-full-text{flex:1;display:flex;flex-direction:column;gap:8px}
-.serv-full a{flex:none}
-@media(max-width:700px){.serv-full{flex-direction:column;align-items:flex-start}}
-.testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:50px}
-.testi{background:var(--panel);border:1px solid var(--linea);padding:30px;position:relative}
-.testi::before{content:"▲";color:var(--naranja);font-size:1.4rem;display:block;margin-bottom:14px}
-.testi p{color:#444;font-size:.95rem;font-style:italic}
-.testi .who{margin-top:18px;display:flex;flex-direction:column}
-.testi .who b{font-weight:700}
-.testi .who span{color:var(--gris);font-size:.82rem}
-.stars{color:var(--naranja);letter-spacing:2px;margin-top:10px}
+
+/* ===== Contenido del servicio ===== */
+.mm-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;margin-top:50px;align-items:start}
+.mm-grid img{border:1px solid var(--linea)}
+.mm-specs{background:var(--panel);border:1px solid var(--linea);padding:30px}
+.mm-specs h4{font-family:var(--display);text-transform:uppercase;font-size:1.1rem;margin-bottom:18px}
+.mm-specs ul{list-style:none;display:flex;flex-direction:column;gap:14px}
+.mm-specs li{display:flex;gap:12px;align-items:flex-start;font-size:.92rem}
+.mm-specs li::before{content:"▲";color:var(--naranja);font-size:.7rem;margin-top:6px}
+@media(max-width:900px){.mm-grid{grid-template-columns:1fr}}
+
+.mm-usos{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:50px}
+.mm-uso{background:var(--panel);border:1px solid var(--linea);padding:26px;transition:border-color .2s}
+.mm-uso:hover{border-color:var(--naranja)}
+.mm-uso h3{font-family:var(--display);font-weight:700;font-size:1.2rem;text-transform:uppercase;margin-bottom:8px}
+.mm-uso p{color:var(--gris);font-size:.9rem}
+
+.cta-final{position:relative;text-align:center;padding:110px 0;overflow:hidden;background:var(--oscuro)}
+.cta-final h2{font-family:var(--display);font-weight:800;font-size:clamp(2.2rem,4.5vw,3.4rem);text-transform:uppercase;line-height:1;color:#fff}
+.cta-final p{color:#d4d4d4;max-width:520px;margin:18px auto 32px}
+
+/* ===== Footer ===== */
 footer{border-top:2px solid var(--naranja);padding:70px 0 30px;background:#050505;color:#fff}
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
 .foot-grid h5{font-family:var(--display);text-transform:uppercase;font-size:1.05rem;letter-spacing:.1em;margin-bottom:16px;color:var(--naranja)}
@@ -125,34 +115,42 @@ footer{border-top:2px solid var(--naranja);padding:70px 0 30px;background:#05050
 
 <section class="page-hero">
   <div class="container">
-    <div class="eyebrow">Servicios y soluciones</div>
-    <h2 class="title">11 líneas de servicio,<br>una sola precisión</h2>
-    <p class="sub">Cada servicio integra equipos de última generación con la plataforma ESRI para captura, procesamiento y análisis geoespacial confiable.</p>
-    <div class="serv-grid">
-      <article class="serv"><div class="serv-thumb"><img src="https://www.ecompass.co/wp-content/uploads/2025/02/Servicio-01-Ala-Fija.png" alt=""></div><div class="ico">✈</div><h3>Drones profesionales</h3><p>Distribución y operación de eBee TAC, eBee VISION, Matrice 350 RTK y Mavic 3 Enterprise, con capacitación, soporte y repuestos.</p><p class="serv-spec">eBee TAC · eBee VISION · Matrice 350 RTK · Mavic 3 Enterprise</p><a href="#">Ver servicio</a></article>
-      <article class="serv"><div class="serv-thumb"><img src="https://www.ecompass.co/wp-content/uploads/2025/02/Servicio-02-LEVANTAMIENTOS-LIDAR-MULTIROTOR.png" alt=""></div><div class="ico">◉</div><h3>Levantamientos LiDAR</h3><p>Nubes de puntos de alta precisión con sensor Zenmuse L1 + RGB para ingeniería, cartografía, topografía e industria.</p><p class="serv-spec">Sensor Zenmuse L1 · Nube de puntos RGB de alta densidad</p><a href="#">Ver servicio</a></article>
-      <article class="serv"><div class="serv-thumb"><img src="https://www.ecompass.co/wp-content/uploads/2025/02/Servicio-03-PROCESAMIENTO-DE-INFORMACION-GEOESPACIAL.png" alt=""></div><div class="ico">🚐</div><h3>Mobile Mapping</h3><p>Captura masiva de corredores viales y entornos urbanos con Trimble MX50: nubes de puntos e imágenes 360° georreferenciadas.</p><p class="serv-spec">Trimble MX50 · Imágenes 360° georreferenciadas</p><a href="mobile-mapping.html">Ver servicio</a></article>
-      <article class="serv"><div class="serv-thumb"><img src="https://www.ecompass.co/wp-content/uploads/2025/12/Proyectos_destacados.png" alt=""></div><div class="ico">▦</div><h3>Fotogrametría</h3><p>Ortofotos de alta resolución, modelos digitales de terreno y superficie para proyectos de cualquier escala.</p><p class="serv-spec">[SPEC PENDIENTE]</p><a href="#">Ver servicio</a></article>
-      <article class="serv"><div class="serv-thumb"><img src="https://www.ecompass.co/wp-content/uploads/2025/12/Proyectos_destacados.png" alt=""></div><div class="ico">✦</div><h3>Gaussian Splatting</h3><p>Recorridos virtuales fotorrealistas y gemelos digitales navegables a partir de captura de realidad de última generación.</p><p class="serv-spec">[SPEC PENDIENTE]</p><a href="gaussian-splatting.html">Ver servicio</a><a href="gaussian-splatting.html#proyectos-3d" class="serv-secondary">Ver demos 3D</a></article>
-      <article class="serv"><div class="serv-thumb"><img src="https://www.ecompass.co/wp-content/uploads/2025/02/Servicio-02-LEVANTAMIENTOS-LIDAR-MULTIROTOR.png" alt=""></div><div class="ico">⬡</div><h3>Escaneo láser 3D & BIM</h3><p>Digitalización de estructuras e infraestructura con escáner láser terrestre y modelado BIM as-built.</p><p class="serv-spec">[SPEC PENDIENTE]</p><a href="#">Ver servicio</a></article>
-      <article class="serv"><div class="serv-thumb"><img src="https://www.ecompass.co/wp-content/uploads/2025/02/Servicio-03-PROCESAMIENTO-DE-INFORMACION-GEOESPACIAL.png" alt=""></div><div class="ico">🌐</div><h3>SIG · Esri Partner</h3><p>Implementación de soluciones ArcGIS, análisis espacial avanzado y tableros de control para la toma de decisiones.</p><p class="serv-spec">[SPEC PENDIENTE]</p><a href="#">Ver servicio</a></article>
-      <article class="serv"><div class="serv-thumb"><img src="https://www.ecompass.co/wp-content/uploads/2025/02/Servicio-01-Ala-Fija.png" alt=""></div><div class="ico">△</div><h3>Topografía & Catastro</h3><p>Levantamientos topográficos de precisión y gestión catastral multipropósito con equipos GNSS y estación total.</p><p class="serv-spec">[SPEC PENDIENTE]</p><a href="#">Ver servicio</a></article>
-      <article class="serv serv-full"><div class="ico">⚙</div><div class="serv-full-text"><h3>Venta de equipos</h3><p>Comercialización de drones, sensores y accesorios con garantía, capacitación y soporte técnico local.</p><p class="serv-spec">[SPEC PENDIENTE]</p></div><a href="#">Ver todos los servicios</a></article>
+    <div class="eyebrow">Servicios · Mapeo móvil e inteligencia geoespacial</div>
+    <h2 class="title">Mobile Mapping</h2>
+    <p class="sub">Captura 3D para la gestión inteligente del territorio: información tridimensional de alta densidad capturada en movimiento, lista para análisis, inventario y toma de decisiones.</p>
+
+    <div class="mm-grid">
+      <div>
+        <img src="https://www.ecompass.co/wp-content/uploads/2025/02/Servicio-03-PROCESAMIENTO-DE-INFORMACION-GEOESPACIAL.png" alt="Vehículo de mapeo móvil eCompass con sensor Trimble MX50">
+        <p style="color:#999;font-size:.8rem;margin-top:14px">[ PLACEHOLDER: reemplazar por fotografías reales del vehículo/proyecto de Mobile Mapping ]</p>
+      </div>
+      <div class="mm-specs">
+        <h4>Ficha técnica</h4>
+        <ul>
+          <li>Sensor Trimble MX50 montado sobre vehículo</li>
+          <li>Nubes de puntos de alta densidad georreferenciadas</li>
+          <li>Imágenes panorámicas 360° sincronizadas con la nube de puntos</li>
+          <li>Captura de corredores viales y entornos urbanos completos en un solo recorrido</li>
+          <li>Datos listos para análisis, inventario y visualización 3D en entornos GIS</li>
+        </ul>
+      </div>
     </div>
-    <p style="color:#999;font-size:.8rem;margin-top:14px">[ PLACEHOLDER: reemplazar fotos por imágenes reales de cada servicio ]</p>
+
+    <div class="mm-usos">
+      <article class="mm-uso"><h3>Infraestructura vial</h3><p>Inventario y documentación de corredores viales completos en una sola pasada.</p></article>
+      <article class="mm-uso"><h3>Gestión de activos</h3><p>Documentación tridimensional de activos urbanos e industriales para inventario y mantenimiento.</p></article>
+      <article class="mm-uso"><h3>Edificaciones y espacios complejos</h3><p>Captura rápida de entornos construidos difíciles de levantar con métodos tradicionales.</p></article>
+      <article class="mm-uso"><h3>Análisis en entornos GIS</h3><p>Datos georreferenciados listos para integrarse a plataformas ArcGIS y flujos de análisis espacial.</p></article>
+    </div>
   </div>
 </section>
 
-<!-- ============ TESTIMONIOS ============ -->
-<section style="background:var(--panel)">
+<section class="cta-final">
   <div class="container">
-    <div class="eyebrow">Testimonios</div>
-    <h2 class="title">Lo que dicen nuestros clientes</h2>
-    <div class="testi-grid">
-      <div class="testi"><p>"[PLACEHOLDER — testimonio real de cliente institucional: resultado obtenido, tiempo de entrega, calidad del dato]"</p><div class="stars">★★★★★</div><div class="who"><b>Nombre Apellido</b><span>Cargo · Entidad pública</span></div></div>
-      <div class="testi"><p>"[PLACEHOLDER — testimonio real de cliente privado: precisión del levantamiento, acompañamiento del equipo eCompass]"</p><div class="stars">★★★★★</div><div class="who"><b>Nombre Apellido</b><span>Gerente de proyecto · Empresa de ingeniería</span></div></div>
-      <div class="testi"><p>"[PLACEHOLDER — testimonio de cliente de formación o venta de equipos: soporte, capacitación, postventa]"</p><div class="stars">★★★★★</div><div class="who"><b>Nombre Apellido</b><span>Director técnico · Firma consultora</span></div></div>
-    </div>
+    <div class="eyebrow" style="justify-content:center">Hablemos</div>
+    <h2>¡Llevemos tu proyecto a 3D!</h2>
+    <p>Recibe una consulta personalizada para implementar mapeo móvil en tus proyectos de infraestructura, activos o gestión territorial.</p>
+    <a class="btn btn-naranja" href="https://api.whatsapp.com/send?phone=573214950316&amp;text=Hola%20eCompass%2C%20quiero%20informaci%C3%B3n%20sobre%20mapeo%20m%C3%B3vil" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
   </div>
 </section>
 
