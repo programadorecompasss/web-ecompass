@@ -8,7 +8,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
 <title>Gaussian Splatting | eCompass</title>
-<meta name="description" content="Recorridos virtuales fotorrealistas y gemelos digitales navegables con Gaussian Splatting. Explora un ejemplo real en 3D de la Plaza de Bolívar, Bogotá.">
+<meta name="description" content="Recorridos virtuales fotorrealistas y gemelos digitales navegables con Gaussian Splatting. Explora escenas reales en 3D de la Plaza de Bolívar y el Museo de los 7 Balcones, Bogotá.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
@@ -71,6 +71,10 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,2
 .splat-context{margin-top:40px;background:var(--panel2);border-left:3px solid var(--naranja);padding:26px 30px}
 .splat-context p{max-width:720px}
 .splat-context .btn{margin-top:18px}
+.gallery-title{font-family:var(--display);text-transform:uppercase;font-weight:800;font-size:clamp(1.3rem,2.5vw,1.8rem)}
+.splat-gallery{margin-top:40px;display:flex;flex-direction:column;gap:80px}
+.splat-card:not(:first-child){padding-top:60px;border-top:1px solid var(--linea)}
+.splat-card h3.card-title{font-family:var(--display);text-transform:uppercase;font-weight:800;font-size:clamp(1.3rem,2.6vw,1.9rem);margin-bottom:6px}
 
 /* ===== Footer ===== */
 footer{border-top:2px solid var(--naranja);padding:70px 0 30px;background:#050505;color:#fff}
@@ -121,39 +125,85 @@ footer{border-top:2px solid var(--naranja);padding:70px 0 30px;background:#05050
   <div class="container">
     <div class="eyebrow">Servicios · Captura de realidad</div>
     <h2 class="title">Gaussian Splatting</h2>
-    <p class="sub">Recorridos virtuales fotorrealistas y gemelos digitales navegables, construidos a partir de captura de realidad de última generación. Explora un ejemplo real a continuación.</p>
+    <p class="sub">Recorridos virtuales fotorrealistas y gemelos digitales navegables, construidos a partir de captura de realidad de última generación.</p>
 
-    <div class="splat-viewer" id="splat-viewer">
-      <div class="splat-preview" id="splat-preview">
-        <img src="https://s3-eu-west-1.amazonaws.com/images.playcanvas.com/splat/3e7b6385/v1/xl.webp" alt="Vista previa del recorrido 3D de la Plaza de Bolívar, Bogotá" loading="lazy">
-        <div class="splat-content">
-          <h3>Plaza de Bolívar — Bogotá en 3D</h3>
-          <button type="button" class="splat-play-btn" id="splat-play-btn">▶ Explorar en 3D</button>
-          <span class="splat-note">Escena 3D de ~175 MB · recomendado con Wi-Fi</span>
+    <div class="eyebrow" style="margin-top:60px">Proyectos 3D</div>
+    <h3 class="gallery-title">Explora nuestras escenas en 3D</h3>
+
+    <div class="splat-gallery" id="proyectos-3d">
+
+      <article class="splat-card">
+        <h3 class="card-title">Plaza de Bolívar — Bogotá en 3D</h3>
+        <div class="splat-viewer" data-splat-id="3e7b6385" data-splat-title="Plaza de Bolívar, Bogotá">
+          <div class="splat-preview">
+            <img src="https://s3-eu-west-1.amazonaws.com/images.playcanvas.com/splat/3e7b6385/v1/xl.webp" alt="Vista previa del recorrido 3D de la Plaza de Bolívar, Bogotá" loading="lazy">
+            <div class="splat-content">
+              <h3>Plaza de Bolívar — Bogotá en 3D</h3>
+              <button type="button" class="splat-play-btn">▶ Explorar en 3D</button>
+              <span class="splat-note">Escena 3D de ~175 MB · recomendado con Wi-Fi</span>
+            </div>
+          </div>
+          <div class="splat-iframe-wrap"></div>
         </div>
-      </div>
-      <div id="splat-iframe-wrap"></div>
-    </div>
 
-    <div class="splat-controls">
-      <a class="btn btn-ghost" href="https://superspl.at/s?id=3e7b6385" target="_blank" rel="noopener">Abrir en pantalla completa</a>
-      <p class="splat-nav-help">Clic izquierdo + arrastrar: rotar · Rueda: zoom · Clic derecho + arrastrar: desplazar</p>
-    </div>
+        <div class="splat-controls">
+          <a class="btn btn-ghost" href="https://superspl.at/s?id=3e7b6385" target="_blank" rel="noopener">Abrir en pantalla completa</a>
+          <p class="splat-nav-help">Clic izquierdo + arrastrar: rotar · Rueda: zoom · Clic derecho + arrastrar: desplazar</p>
+        </div>
 
-    <div class="splat-datasheet">
-      <h4>Ficha técnica</h4>
-      <dl>
-        <dt>Tecnología</dt><dd>Gaussian Splatting</dd>
-        <dt>Ubicación</dt><dd>Plaza de Bolívar, Bogotá</dd>
-        <dt>Método de captura</dt><dd class="ph">[PLACEHOLDER: confirmar método de captura — dron, cámara 360°, mobile mapping, etc.]</dd>
-        <dt>Fecha de captura</dt><dd class="ph">[PLACEHOLDER: confirmar fecha]</dd>
-        <dt>Equipo utilizado</dt><dd class="ph">[PLACEHOLDER: confirmar equipo/sensor/dron]</dd>
-      </dl>
-    </div>
+        <div class="splat-datasheet">
+          <h4>Ficha técnica</h4>
+          <dl>
+            <dt>Tecnología</dt><dd>Gaussian Splatting</dd>
+            <dt>Ubicación</dt><dd>Plaza de Bolívar, Bogotá</dd>
+            <dt>Método de captura</dt><dd class="ph">[PLACEHOLDER: confirmar método de captura — dron, cámara 360°, mobile mapping, etc.]</dd>
+            <dt>Fecha de captura</dt><dd class="ph">[PLACEHOLDER: confirmar fecha]</dd>
+            <dt>Equipo utilizado</dt><dd class="ph">[PLACEHOLDER: confirmar equipo/sensor/dron]</dd>
+          </dl>
+        </div>
 
-    <div class="splat-context">
-      <p>Este es un ejemplo real del servicio de <strong>recorridos virtuales fotorrealistas</strong> de eCompass: gemelos digitales navegables construidos con Gaussian Splatting, ideales para documentación de proyectos, marketing inmobiliario, patrimonio cultural y presentación de obra a clientes.</p>
-      <a class="btn btn-naranja" href="https://api.whatsapp.com/send?phone=573214950316&amp;text=Hola%20eCompass%2C%20quiero%20un%20recorrido%203D%20de%20mi%20proyecto" target="_blank" rel="noopener">Quiero un recorrido 3D de mi proyecto</a>
+        <div class="splat-context">
+          <p>Este es un ejemplo real del servicio de <strong>recorridos virtuales fotorrealistas</strong> de eCompass: gemelos digitales navegables construidos con Gaussian Splatting, ideales para documentación de proyectos, marketing inmobiliario, patrimonio cultural y presentación de obra a clientes.</p>
+          <a class="btn btn-naranja" href="https://api.whatsapp.com/send?phone=573214950316&amp;text=Hola%20eCompass%2C%20quiero%20un%20recorrido%203D%20de%20mi%20proyecto" target="_blank" rel="noopener">Quiero un recorrido 3D de mi proyecto</a>
+        </div>
+      </article>
+
+      <article class="splat-card">
+        <h3 class="card-title">Museo de los 7 Balcones — La Candelaria, Bogotá</h3>
+        <div class="splat-viewer" data-splat-id="22601158" data-splat-title="Museo de los 7 Balcones, La Candelaria, Bogotá">
+          <div class="splat-preview">
+            <img src="https://s3-eu-west-1.amazonaws.com/images.playcanvas.com/splat/22601158/v1/xl.webp" alt="Vista previa del recorrido 3D del Museo de los 7 Balcones, La Candelaria, Bogotá" loading="lazy">
+            <div class="splat-content">
+              <h3>Museo de los 7 Balcones — La Candelaria, Bogotá</h3>
+              <button type="button" class="splat-play-btn">▶ Explorar en 3D</button>
+              <span class="splat-note">Escena 3D de ~340 MB · recomendado con Wi-Fi</span>
+            </div>
+          </div>
+          <div class="splat-iframe-wrap"></div>
+        </div>
+
+        <div class="splat-controls">
+          <a class="btn btn-ghost" href="https://superspl.at/s?id=22601158" target="_blank" rel="noopener">Abrir en pantalla completa</a>
+          <p class="splat-nav-help">Clic izquierdo + arrastrar: rotar · Rueda: zoom · Clic derecho + arrastrar: desplazar</p>
+        </div>
+
+        <div class="splat-datasheet">
+          <h4>Ficha técnica</h4>
+          <dl>
+            <dt>Tecnología</dt><dd>Gaussian Splatting</dd>
+            <dt>Ubicación</dt><dd>Museo de los 7 Balcones, La Candelaria, Bogotá</dd>
+            <dt>Método de captura</dt><dd class="ph">[PLACEHOLDER: confirmar método de captura — dron, cámara 360°, mobile mapping, etc.]</dd>
+            <dt>Fecha de captura</dt><dd class="ph">[PLACEHOLDER: confirmar fecha]</dd>
+            <dt>Equipo utilizado</dt><dd class="ph">[PLACEHOLDER: confirmar equipo/sensor/dron]</dd>
+          </dl>
+        </div>
+
+        <div class="splat-context">
+          <p>Captura de realidad con <strong>Gaussian Splatting</strong> del Museo de los 7 Balcones, patrimonio arquitectónico del centro histórico de Bogotá — otro ejemplo del servicio de recorridos virtuales fotorrealistas de eCompass.</p>
+          <a class="btn btn-naranja" href="https://api.whatsapp.com/send?phone=573214950316&amp;text=Hola%20eCompass%2C%20quiero%20un%20recorrido%203D%20de%20mi%20proyecto" target="_blank" rel="noopener">Quiero un recorrido 3D de mi proyecto</a>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
@@ -206,19 +256,23 @@ footer{border-top:2px solid var(--naranja);padding:70px 0 30px;background:#05050
 
 <script>
 (function(){
-  const previewBtn = document.getElementById('splat-play-btn');
-  const preview = document.getElementById('splat-preview');
-  const iframeWrap = document.getElementById('splat-iframe-wrap');
+  document.querySelectorAll('.splat-viewer').forEach(function(viewer){
+    const splatId = viewer.dataset.splatId;
+    const title = viewer.dataset.splatTitle || 'Visor 3D';
+    const btn = viewer.querySelector('.splat-play-btn');
+    const preview = viewer.querySelector('.splat-preview');
+    const iframeWrap = viewer.querySelector('.splat-iframe-wrap');
 
-  previewBtn.addEventListener('click', function(){
-    const iframe = document.createElement('iframe');
-    iframe.src = 'https://superspl.at/s?id=3e7b6385';
-    iframe.title = 'Visor 3D — Plaza de Bolívar, Bogotá (Gaussian Splatting)';
-    iframe.allow = 'accelerometer; gyroscope; magnetometer; xr-spatial-tracking; fullscreen';
-    iframe.setAttribute('allowfullscreen', '');
-    iframe.loading = 'lazy';
-    iframeWrap.appendChild(iframe);
-    preview.remove();
+    btn.addEventListener('click', function(){
+      const iframe = document.createElement('iframe');
+      iframe.src = 'https://superspl.at/s?id=' + splatId;
+      iframe.title = 'Visor 3D — ' + title + ' (Gaussian Splatting)';
+      iframe.allow = 'accelerometer; gyroscope; magnetometer; xr-spatial-tracking; fullscreen';
+      iframe.setAttribute('allowfullscreen', '');
+      iframe.loading = 'lazy';
+      iframeWrap.appendChild(iframe);
+      preview.remove();
+    });
   });
 })();
 </script>
