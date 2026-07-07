@@ -1,5 +1,5 @@
 # Proyecto: Rediseño web eCompass SAS
-- Empresa colombiana de geomática: LiDAR, fotogrametría, mobile mapping (Trimble MX50), Gaussian Splatting, BIM, SIG (Esri Partner), topografía, catastro, drones (eBee TAC, eBee VISION, Matrice 350 RTK), venta de equipos.
+- Empresa colombiana de geomática: LiDAR, fotogrametría, mobile mapping (Trimble MX50), Gaussian Splatting, BIM, SIG (Esri Partner), topografía, catastro, drones (eBee X, eBee VISION, eBee TAC, eBee TAC Seguridad Pública, Matrice 350 RTK — distribuidor autorizado AgEagle en Colombia), venta de equipos.
 - 12+ años, 170+ proyectos, 100+ clientes.
 
 ## Identidad visual (NUNCA cambiar sin autorización)
@@ -28,12 +28,24 @@ Alineada al manual de marca oficial recibido.
 - Prohibido: deformar, rotar, agregar efectos (sombras, brillos, degradados) o contornos al logo
 
 ## Estructura de archivos
-Sitio multipágina plano, sin subcarpetas (no existe `site/` ni `servicios/` con landings individuales):
+Sitio multipágina, casi todo plano en la raíz, con UNA subcarpeta (`drones/`) para las landings de producto:
 - `index.html` — inicio; conserva la sección `id="contacto"` (CTA final de WhatsApp), pero el enlace "Contacto" del menú ahora lleva a `contacto.html`
-- `servicios.html` — página única de servicios (no hay una landing por cada línea de servicio)
+- `servicios.html` — página única de servicios (no hay una landing por cada línea de servicio); las 11 tarjetas usan iconos SVG inline propios (ver `## Iconos de servicios`)
 - `sectores.html`, `blog.html`, `multimedia.html`, `recursos.html`, `webinars.html`
 - `contacto.html` — página de contacto: hero compacto con canvas LiDAR, información de contacto (WhatsApp, teléfono, correo, ubicación, badges Esri Partner/AgEagle, redes) y formulario con validación (fallback a WhatsApp si no hay backend configurado)
+- `gaussian-splatting.html` — landing de Gaussian Splatting con galería "Proyectos 3D" (visores SuperSplat de carga diferida)
+- `mobile-mapping.html` — landing de Mobile Mapping
+- `drones/` — landings de producto de la línea AgEagle (menú "Drones" desplegable en el header de TODAS las páginas):
+  - `drones/ebee-x.html`, `drones/ebee-vision.html`, `drones/ebee-tac.html`, `drones/ebee-tac-seguridad.html`
+  - Cada una: sub-nav fija con anclas (Descripción, Características, ¿Por qué?, Especificaciones, Cámaras), hero oscuro con canvas de puntos, grid de cifras, sección de argumentos, tabla de especificaciones (con scroll horizontal en móvil), cámaras compatibles, CTA final con interlinking a los otros 3 drones
+  - Rutas relativas ajustadas (`../index.html`, `../img/...`, etc.) — son las únicas páginas fuera de la raíz
 - `index.html.html` — archivo huérfano de la versión anterior de una sola página; no está enlazado desde ninguna otra página
+
+## Menú "Drones" (desplegable)
+Presente en el header de las 14 páginas del sitio. En escritorio se revela con `:hover`/`:focus-within` (panel oscuro, hover naranja); en móvil funciona como acordeón dentro del menú hamburguesa (JS con `data-dropdown="drones"` / `#drones-menu`, clase `is-open` — evitar reusar el nombre de clase `open` porque colisiona en especificidad con `.nav ul.open` del menú móvil).
+
+## Iconos de servicios
+Las 11 tarjetas de `servicios.html` (y las 3 del adelanto en `index.html`) usan SVG inline dibujados a mano (viewBox 48x48, `stroke="currentColor"`, `stroke-width:2.5`, `stroke-linecap:square`, sin fill, cortes a 45°). Nada de emojis ni librerías de iconos externas — mantener ese estilo si se agregan más servicios.
 
 ## Reglas
 - **[MÁXIMA PRIORIDAD] OBLIGATORIO: el sitio debe verse y funcionar perfectamente en celulares.** Todo cambio (secciones nuevas, banners, visores, formularios) debe verificarse en viewport móvil (375px y 414px de ancho) antes de dar por terminada la tarea: sin texto cortado ni desbordado, botones táctiles de mínimo 44px, imágenes y videos adaptados, menú móvil funcional, y sin scroll horizontal en ninguna página.
