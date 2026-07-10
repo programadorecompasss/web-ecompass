@@ -44,6 +44,7 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,2
 .nav ul a:hover,.nav ul a:focus-visible,.nav ul a.active{color:var(--naranja)}
 .nav .cta-nav{background:var(--naranja);color:#000;padding:13px 20px;font-weight:800;font-family:var(--display);text-transform:uppercase;letter-spacing:.05em;font-size:1rem;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%);transition:background .2s,color .2s;white-space:nowrap}
 .nav .cta-nav:hover{background:var(--texto);color:#fff}
+.cta-nav .cta-short{display:none}
 .nav ul li.has-dropdown{position:relative}
 .dropdown-toggle{display:flex;align-items:center;gap:4px}
 .dropdown-toggle .caret{font-size:.65em;transition:transform .2s}
@@ -93,6 +94,7 @@ footer{border-top:2px solid var(--naranja);padding:70px 0 30px;background:#05050
 .foot-grid ul{list-style:none;display:flex;flex-direction:column;gap:9px;font-size:.9rem;color:#aaa}
 .foot-grid ul a:hover{color:var(--naranja)}
 .foot-grid p{color:#aaa;font-size:.9rem;margin-top:14px}
+.footer-logo{height:42px}
 .socials{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
 .socials a{width:44px;height:44px;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:800;transition:border-color .2s,color .2s}
 .socials a:hover{border-color:var(--naranja);color:var(--naranja)}
@@ -114,6 +116,20 @@ footer{border-top:2px solid var(--naranja);padding:70px 0 30px;background:#05050
 }
 @media(max-width:900px){.foot-grid{grid-template-columns:1fr 1fr}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+@media(max-width:900px){
+  header .container{padding:0 18px}
+  .nav{gap:12px}
+  .nav img{width:200px;height:auto;flex-shrink:0}
+  .nav a:first-child{flex-shrink:0}
+  .cta-nav,.burger{flex-shrink:0}
+  .nav .cta-nav{padding:10px 14px;font-size:.85rem}
+  .cta-nav .cta-full{display:none}
+  .cta-nav .cta-short{display:inline}
+  .footer-logo{width:200px;height:auto}
+}
+@media(max-width:640px){
+  .foot-grid{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
@@ -140,7 +156,7 @@ footer{border-top:2px solid var(--naranja);padding:70px 0 30px;background:#05050
       <li><a href="recursos.html">Recursos</a></li>
       <li><a href="contacto.html">Contacto</a></li>
     </ul>
-    <a class="cta-nav" href="https://api.whatsapp.com/send?phone=573214950316&amp;text=Hola%20eCompass%2C%20quiero%20cotizar%20un%20proyecto" target="_blank" rel="noopener">Cotiza tu proyecto</a>
+    <a class="cta-nav" href="https://api.whatsapp.com/send?phone=573214950316&amp;text=Hola%20eCompass%2C%20quiero%20cotizar%20un%20proyecto" target="_blank" rel="noopener"><span class="cta-full">Cotiza tu proyecto</span><span class="cta-short">Cotizar</span></a>
     <button class="burger" aria-label="Abrir menú" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
   </div>
 </header>
@@ -184,7 +200,7 @@ footer{border-top:2px solid var(--naranja);padding:70px 0 30px;background:#05050
   <div class="container">
     <div class="foot-grid">
       <div>
-        <img src="img/logo-ecompass-blanco.png" alt="eCompass" style="height:42px">
+        <img src="img/logo-ecompass-blanco.png" alt="eCompass" class="footer-logo">
         <p>Servicios geoespaciales y UAS profesionales de alta precisión. Esri Partner. Bogotá, Colombia.</p>
         <div class="socials">
           <a href="https://www.instagram.com/ecompass_oficial/" target="_blank" rel="noopener" aria-label="eCompass en Instagram">
