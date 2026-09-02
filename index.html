@@ -409,6 +409,26 @@ body.mm-open .mm-backdrop{opacity:1;visibility:visible;pointer-events:auto}
   .mm-rec-cta{min-height:220px;margin-top:4px}
 }
 </style>
+<style id="partner-strip-css">
+/* ===== Franja Esri Partner Network ===== */
+.partner-strip{background:#000;padding:clamp(46px,8vw,80px) 0;border-top:1px solid rgba(255,255,255,.1)}
+.partner-strip .container{display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center}
+.partner-eyebrow{font-family:var(--body);font-weight:700;font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--naranja)}
+.partner-lockup{display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap}
+.partner-logo{height:44px;width:auto;display:block}
+.partner-esri{font-family:var(--body);color:#fff;font-weight:400;font-size:clamp(1.35rem,3.4vw,1.95rem);letter-spacing:.015em;line-height:1;white-space:nowrap}
+.partner-esri b{font-weight:700}
+.partner-badge{flex:none;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;width:74px;height:74px;border-radius:50%;background:#fff;color:var(--naranja);line-height:1;font-family:var(--body)}
+.partner-badge b{font-size:1.45rem;font-weight:800}
+.partner-badge span{font-size:.58rem;font-weight:700;letter-spacing:.14em;margin-top:3px;text-transform:uppercase}
+.partner-cap{font-family:var(--body);color:#9a9a9a;font-size:.85rem;max-width:520px;line-height:1.5}
+@media(max-width:480px){
+  .partner-lockup{gap:16px}
+  .partner-esri{white-space:normal}
+  .partner-badge{width:62px;height:62px}
+  .partner-badge b{font-size:1.2rem}
+}
+</style>
 </head>
 <body>
 
@@ -520,6 +540,21 @@ body.mm-open .mm-backdrop{opacity:1;visibility:visible;pointer-events:auto}
       <div><b data-count="100">0</b><span>Clientes confían</span></div>
       <div><b data-count="11">0</b><span>Líneas de servicio</span></div>
     </div>
+  </div>
+</section>
+
+<!-- ============ FRANJA ESRI PARTNER NETWORK ============ -->
+<!-- TODO: cuando exista el logo oficial "assets/logos/esri_blanco.png" (Esri Partner
+     Network, versión blanca), reemplazar el <span class="partner-esri">…</span> por:
+     <img class="partner-logo" src="assets/logos/esri_blanco.png" alt="Esri Partner Network"> -->
+<section class="partner-strip" aria-label="Alianza Esri Partner Network">
+  <div class="container">
+    <span class="partner-eyebrow">Alianza tecnológica</span>
+    <div class="partner-lockup">
+      <span class="partner-esri">Esri <b>Partner Network</b></span>
+      <span class="partner-badge"><b>13</b><span>Años</span></span>
+    </div>
+    <p class="partner-cap">Socios de Esri en Colombia para captura, procesamiento y análisis geoespacial sobre la plataforma ArcGIS.</p>
   </div>
 </section>
 
