@@ -1,2 +1,5 @@
 publicar/
 img/hero-video.mp4.mp4
+
+# Local Netlify folder
+.netlify
