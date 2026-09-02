@@ -123,6 +123,67 @@ footer{border-top:2px solid var(--naranja);padding:70px 0 30px;background:#05050
   .foot-grid{grid-template-columns:1fr}
 }
 </style>
+
+<style id="mm-redesign">
+/* ===== Rediseño mega-menús (Servicios claro / Recursos oscuro) ===== */
+.mm-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.55);opacity:0;visibility:hidden;transition:opacity .25s ease,visibility .25s ease;z-index:90;pointer-events:none}
+body.mm-open .mm-backdrop{opacity:1;visibility:visible;pointer-events:auto}
+
+/* --- Servicios: panel claro, ancho completo --- */
+.nav .dropdown-menu.mm-servicios{position:absolute;top:100%;left:24px;right:24px;min-width:0;margin-top:10px;display:block;background:#fff;border:1px solid var(--linea);border-bottom:3px solid var(--linea);box-shadow:0 20px 42px rgba(0,0,0,.13);padding:32px 40px 34px;z-index:150}
+.mm-serv-head{font-family:var(--body);font-weight:700;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:#1a1a1a;padding-bottom:12px;border-bottom:1px solid var(--linea);margin-bottom:24px}
+.mm-serv-layout{display:grid;grid-template-columns:repeat(4,1fr) 288px;grid-template-rows:auto auto;gap:26px 40px;align-items:start}
+.mm-serv-col{display:flex;flex-direction:column;gap:16px;grid-row:1}
+.mm-serv-col a{font-family:var(--body);font-weight:500;font-size:.9rem;color:#1a1a1a;line-height:1.3;transition:color .15s ease}
+.mm-serv-col a:hover,.mm-serv-col a:focus-visible{color:var(--naranja)}
+.mm-serv-allbtn{grid-column:1 / 5;grid-row:2;justify-self:start;display:inline-block;border:1px solid var(--naranja);color:var(--naranja);background:transparent;font-family:var(--body);font-weight:700;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;padding:12px 22px;transition:background .2s ease,color .2s ease}
+.mm-serv-allbtn:hover{background:var(--naranja);color:#000}
+.mm-serv-feat{grid-column:5;grid-row:1 / 3;border-left:1px solid var(--linea);padding-left:32px}
+.mm-serv-feat img{width:100%;aspect-ratio:16/10;object-fit:cover;margin:0 0 14px}
+.mm-serv-feat h4{font-family:var(--body);font-weight:700;font-size:1rem;color:#111;line-height:1.28;margin:0 0 12px}
+.mm-serv-feat .mm-arrow{font-family:var(--body);font-weight:700;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--naranja)}
+.mm-serv-feat .mm-arrow:hover{text-decoration:underline;text-underline-offset:3px}
+
+/* --- Recursos: panel oscuro, ancho completo, marca de agua --- */
+.nav .dropdown-menu.mm-recursos{position:absolute;top:100%;left:24px;right:24px;min-width:0;margin-top:10px;display:block;background:#000;border:1px solid rgba(255,255,255,.14);padding:34px 40px 38px;overflow:hidden;z-index:150}
+.mm-recursos::before{content:"";position:absolute;right:-60px;top:50%;width:440px;height:440px;transform:translateY(-50%);background:url('img/apple-touch-icon.png') center/contain no-repeat;filter:grayscale(1) brightness(3) blur(1px);opacity:.05;pointer-events:none}
+.mm-recursos > *{position:relative;z-index:1}
+.mm-eyebrow{display:flex;align-items:center;gap:16px;font-family:var(--body);font-weight:700;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--naranja);margin-bottom:24px}
+.mm-eyebrow::after{content:"";flex:1;height:1px;background:rgba(255,255,255,.18)}
+.mm-rec-layout{display:grid;grid-template-columns:1fr 1fr 1fr 320px;gap:18px;align-items:stretch}
+.mm-rec-card{display:flex;flex-direction:column;background:#111;border:1px solid rgba(255,255,255,.12);padding:22px 22px 24px;transition:border-color .2s ease,background .2s ease}
+.mm-rec-card:hover,.mm-rec-card:focus-visible{border-color:var(--naranja);background:#171717}
+.mm-rec-card h4{font-family:var(--body);font-weight:700;font-size:1.05rem;color:#fff;margin:0 0 8px;line-height:1.2}
+.mm-rec-card p{font-family:var(--body);font-weight:400;font-size:.82rem;color:#b9b9b9;line-height:1.45;margin:0}
+.mm-rec-card:hover h4,.mm-rec-card:focus-visible h4{color:var(--naranja)}
+.mm-rec-cta{position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding:26px;overflow:hidden;border:1px solid rgba(255,255,255,.14);min-height:100%}
+.mm-rec-cta::before{content:"";position:absolute;inset:0;background:url('img/hero-poster.jpg') center/cover}
+.mm-rec-cta::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 40%,rgba(0,0,0,.35) 0%,rgba(0,0,0,.92) 100%)}
+.mm-rec-cta > *{position:relative;z-index:1}
+.mm-rec-cta .mm-tag{font-family:var(--body);font-weight:700;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--naranja);margin-bottom:10px}
+.mm-rec-cta h4{font-family:var(--body);font-weight:700;font-size:1.35rem;color:#fff;line-height:1.15;margin:0 0 8px}
+.mm-rec-cta p{font-family:var(--body);font-weight:400;font-size:.82rem;color:#dcdcdc;line-height:1.45;margin:0 0 18px}
+.mm-rec-cta .mm-btn{align-self:flex-start;border:1px solid var(--naranja);color:var(--naranja);font-family:var(--body);font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;padding:11px 20px;transition:background .2s ease,color .2s ease}
+.mm-rec-cta .mm-btn:hover{background:var(--naranja);color:#000}
+
+/* --- Móvil: 1 sola columna, sin marca de agua, sin scroll horizontal --- */
+@media(max-width:1050px){
+  .mm-backdrop{display:none}
+  .nav .dropdown-menu.mm-servicios,.nav .dropdown-menu.mm-recursos{position:static;left:auto;right:auto;margin-top:0;padding:0;border:none;box-shadow:none;background:transparent}
+  .nav .dropdown-menu.mm-servicios.is-open{padding:4px 0 12px}
+  .nav .dropdown-menu.mm-recursos.is-open{background:#000;padding:16px}
+  .mm-recursos::before{display:none}
+  .mm-eyebrow{color:var(--naranja)}
+  .mm-serv-head{padding-left:0}
+  .mm-serv-layout,.mm-rec-layout{grid-template-columns:1fr;gap:12px}
+  .mm-serv-col{gap:2px}
+  .mm-serv-col a{padding:13px 0 13px 18px;font-size:.92rem}
+  .mm-serv-allbtn{grid-column:auto;grid-row:auto;justify-self:stretch;text-align:center;margin-top:8px}
+  .mm-serv-feat{grid-column:auto;grid-row:auto;border-left:none;padding-left:0;border-top:1px solid var(--linea);padding-top:18px;margin-top:8px}
+  .mm-rec-card{padding:16px 18px}
+  .mm-rec-cta{min-height:220px;margin-top:4px}
+}
+</style>
 </head>
 <body>
 
@@ -133,32 +194,42 @@ footer{border-top:2px solid var(--naranja);padding:70px 0 30px;background:#05050
       <li><a href="index.html">Inicio</a></li>
       <li class="has-dropdown has-dropdown--mega">
         <a href="servicios.html" class="dropdown-toggle" data-dropdown="servicios">Servicios <span class="caret">▾</span></a>
-        <div class="dropdown-menu dropdown-menu--mega" id="servicios-menu">
-          <div class="mega-col">
-            <a class="mega-card" href="servicios/control-geodesico-y-posicionamiento.html"><h4>Control Geodésico y Posicionamiento</h4><p class="mega-kw">REDES GEODÉSICAS · GNSS · NIVELACIÓN · GEORREFERENCIACIÓN · REPLANTEO · CONTROL</p></a>
-            <a class="mega-card" href="servicios/levantamientos-y-modelos-del-terreno.html"><h4>Levantamientos y Modelos del Terreno</h4><p class="mega-kw">TOPOGRAFÍA · FOTOGRAMETRÍA · LiDAR · MDT/MDS · CARTOGRAFÍA · BATIMETRÍA</p></a>
-            <a class="mega-card" href="servicios/documentacion-digital-de-activos-existentes-as-built-scan-to-bim.html"><h4>Documentación Digital de Activos Existentes – As-Built / Scan to BIM</h4><p class="mega-kw">AS-BUILT · TLS · SLAM · NUBE DE PUNTOS · SCAN TO BIM · MODELADO 3D</p></a>
-            <a class="mega-card" href="servicios/inventarios-y-diagnostico-de-infraestructura.html"><h4>Inventarios y Diagnóstico de Infraestructura</h4><p class="mega-kw">MOBILE MAPPING · INVENTARIOS · ACTIVOS · VÍAS · FERROCARRILES · INDICADORES</p></a>
+        <div class="dropdown-menu dropdown-menu--mega mm-servicios" id="servicios-menu">
+        <div class="mm-serv-head">Servicios</div>
+        <div class="mm-serv-layout">
+          <div class="mm-serv-col">
+            <a href="servicios/control-geodesico-y-posicionamiento.html">Control Geodésico y Posicionamiento</a>
+            <a href="servicios/levantamientos-y-modelos-del-terreno.html">Levantamientos y Modelos del Terreno</a>
+            <a href="servicios/documentacion-digital-de-activos-existentes-as-built-scan-to-bim.html">Documentación Digital de Activos Existentes – As-Built / Scan to BIM</a>
+            <a href="servicios/inventarios-y-diagnostico-de-infraestructura.html">Inventarios y Diagnóstico de Infraestructura</a>
           </div>
-          <div class="mega-col">
-            <a class="mega-card" href="servicios/inspeccion-y-monitoreo.html"><h4>Inspección y Monitoreo</h4><p class="mega-kw">INSPECCIÓN · MONITOREO · CAMBIO · TERMOGRAFÍA · VOLUMETRÍA · SEGUIMIENTO</p></a>
-            <a class="mega-card" href="servicios/soluciones-sig-y-gestion-de-informacion-geoespacial.html"><h4>Soluciones SIG y Gestión de Información Geoespacial</h4><p class="mega-kw">SIG · GEODATABASES · ANÁLISIS · AUTOMATIZACIÓN · VISORES · INTEROPERABILIDAD</p></a>
-            <a class="mega-card" href="servicios/datos-geoespaciales-como-producto-content-delivery.html"><h4>Datos Geoespaciales como Producto – Content Delivery</h4><p class="mega-kw">DATASETS · ORTOIMÁGENES · NUBES · CARTOGRAFÍA · INVENTARIOS · SUSCRIPCIÓN</p></a>
-            <a class="mega-card" href="servicios/catastro-multiproposito-y-gestion-predial.html"><h4>Catastro Multipropósito y Gestión Predial</h4><p class="mega-kw">CATASTRO · LADM-COL · PREDIOS · BARRIDO · CALIDAD · INTEROPERABILIDAD</p></a>
+          <div class="mm-serv-col">
+            <a href="servicios/inspeccion-y-monitoreo.html">Inspección y Monitoreo</a>
+            <a href="servicios/soluciones-sig-y-gestion-de-informacion-geoespacial.html">Soluciones SIG y Gestión de Información Geoespacial</a>
+            <a href="servicios/datos-geoespaciales-como-producto-content-delivery.html">Datos Geoespaciales como Producto – Content Delivery</a>
+            <a href="servicios/catastro-multiproposito-y-gestion-predial.html">Catastro Multipropósito y Gestión Predial</a>
           </div>
-          <div class="mega-col">
-            <a class="mega-card" href="servicios/cumplimiento-regulatorio-geoespacial.html"><h4>Cumplimiento Regulatorio Geoespacial</h4><p class="mega-kw">TRÁMITES · RADICACIÓN · AMBIENTAL · RIESGO · MINERÍA · CONCESIONES</p></a>
-            <a class="mega-card" href="servicios/redes-subterraneas-y-gestion-de-interferencias.html"><h4>Redes Subterráneas y Gestión de Interferencias</h4><p class="mega-kw">REDES ENTERRADAS · GPR · LOCALIZACIÓN · INTERFERENCIAS · CATASTRO DE REDES</p></a>
-            <a class="mega-card" href="servicios/observacion-de-la-tierra-y-monitoreo-satelital.html"><h4>Observación de la Tierra y Monitoreo Satelital</h4><p class="mega-kw">SATÉLITE · ÓPTICO · RADAR · InSAR · CAMBIO · DEFORMACIÓN · ALERTAS</p></a>
-            <a class="mega-card" href="servicios/habilitacion-tecnica-capacitacion-y-transferencia-de-conocimiento.html"><h4>Habilitación Técnica, Capacitación y Transferencia de Conocimiento</h4><p class="mega-kw">CAPACITACIÓN · PUESTA EN MARCHA · PROCEDIMIENTOS · UAS · SIG · TRANSFERENCIA</p></a>
+          <div class="mm-serv-col">
+            <a href="servicios/cumplimiento-regulatorio-geoespacial.html">Cumplimiento Regulatorio Geoespacial</a>
+            <a href="servicios/redes-subterraneas-y-gestion-de-interferencias.html">Redes Subterráneas y Gestión de Interferencias</a>
+            <a href="servicios/observacion-de-la-tierra-y-monitoreo-satelital.html">Observación de la Tierra y Monitoreo Satelital</a>
+            <a href="servicios/habilitacion-tecnica-capacitacion-y-transferencia-de-conocimiento.html">Habilitación Técnica, Capacitación y Transferencia de Conocimiento</a>
           </div>
-          <div class="mega-col">
-            <a class="mega-card" href="servicios/tecnologia-distribucion-soporte-y-arriendo.html"><h4>Tecnología: Distribución, Soporte y Arriendo</h4><p class="mega-kw">EQUIPOS · SOFTWARE · SOPORTE · MANTENIMIENTO · ARRIENDO · RENOVACIÓN</p></a>
-            <a class="mega-card" href="servicios/trazabilidad-geoespacial-de-cadenas-agropecuarias.html"><h4>Trazabilidad Geoespacial de Cadenas Agropecuarias</h4><p class="mega-kw">PARCELAS · EUDR · TRAZABILIDAD · NO DEFORESTACIÓN · RIESGO · PROVEEDORES</p></a>
-            <a class="mega-card" href="servicios/agricultura-y-ganaderia-de-precision.html"><h4>Agricultura y Ganadería de Precisión</h4><p class="mega-kw">MULTIESPECTRAL · VIGOR · CENSOS · PRESCRIPCIÓN · DRENAJE · MONITOREO</p></a>
-            <a class="mega-card" href="servicios/defensa-seguridad-e-inteligencia-geoespacial.html"><h4>Defensa, Seguridad e Inteligencia Geoespacial</h4><p class="mega-kw">CARTOGRAFÍA · ISR GEOESPACIAL · SATÉLITE · INFRAESTRUCTURA CRÍTICA · SEGURIDAD</p></a>
+          <div class="mm-serv-col">
+            <a href="servicios/tecnologia-distribucion-soporte-y-arriendo.html">Tecnología: Distribución, Soporte y Arriendo</a>
+            <a href="servicios/trazabilidad-geoespacial-de-cadenas-agropecuarias.html">Trazabilidad Geoespacial de Cadenas Agropecuarias</a>
+            <a href="servicios/agricultura-y-ganaderia-de-precision.html">Agricultura y Ganadería de Precisión</a>
+            <a href="servicios/defensa-seguridad-e-inteligencia-geoespacial.html">Defensa, Seguridad e Inteligencia Geoespacial</a>
+          </div>
+          <a class="mm-serv-allbtn" href="servicios.html">Ver todos los servicios &rarr;</a>
+          <div class="mm-serv-feat">
+            <div class="mm-serv-head">Proyectos destacados</div>
+            <img src="img/hero-poster.jpg" alt="Proyecto eCompass captura aérea con dron" loading="lazy">
+            <h4>Gemelos digitales y recorridos 3D con Gaussian Splatting</h4>
+            <a class="mm-arrow" href="gaussian-splatting.html">Conoce el proyecto &rarr;</a>
           </div>
         </div>
+      </div>
       </li>
       <li class="has-dropdown">
         <a href="drones/ebee-x.html" class="dropdown-toggle" data-dropdown="drones">Drones <span class="caret">▾</span></a>
@@ -169,13 +240,31 @@ footer{border-top:2px solid var(--naranja);padding:70px 0 30px;background:#05050
           <li><a href="drones/ebee-tac-seguridad.html">eBee TAC Seguridad Pública</a></li>
         </ul>
       </li>
-      <li class="has-dropdown">
+      <li class="has-dropdown has-dropdown--mega">
         <a href="recursos.html" class="dropdown-toggle active" data-dropdown="recursos">Recursos <span class="caret">▾</span></a>
-        <ul class="dropdown-menu dropdown-menu--rich" id="recursos-menu">
-          <li><a href="multimedia.html"><span class="dmi-ico"><svg viewBox="0 0 48 48" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" aria-hidden="true"><rect x="6" y="10" width="36" height="28"/><path d="M20 18 L32 24 L20 30 Z"/></svg></span><span class="dmi-text"><strong>Multimedia</strong><span>Videos y recorridos de nuestras operaciones en campo</span></span></a></li>
-          <li><a href="webinars.html"><span class="dmi-ico"><svg viewBox="0 0 48 48" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" aria-hidden="true"><circle cx="24" cy="24" r="5"/><path d="M15 15 A13 13 0 0 0 15 33"/><path d="M33 15 A13 13 0 0 1 33 33"/></svg></span><span class="dmi-text"><strong>Webinars</strong><span>Charlas en vivo con nuestros especialistas y grabaciones</span></span></a></li>
-          <li><a href="blog.html"><span class="dmi-ico"><svg viewBox="0 0 48 48" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" aria-hidden="true"><rect x="10" y="6" width="28" height="36"/><line x1="16" y1="16" x2="32" y2="16"/><line x1="16" y1="24" x2="32" y2="24"/><line x1="16" y1="32" x2="25" y2="32"/></svg></span><span class="dmi-text"><strong>Blog</strong><span>Análisis y tendencias del sector geoespacial</span></span></a></li>
-        </ul>
+        <div class="dropdown-menu dropdown-menu--mega mm-recursos" id="recursos-menu">
+        <div class="mm-eyebrow">Recursos</div>
+        <div class="mm-rec-layout">
+          <a class="mm-rec-card" href="multimedia.html">
+            <h4>Multimedia</h4>
+            <p>Videos y recorridos de nuestras operaciones en campo</p>
+          </a>
+          <a class="mm-rec-card" href="webinars.html">
+            <h4>Webinars</h4>
+            <p>Charlas en vivo con nuestros especialistas y grabaciones</p>
+          </a>
+          <a class="mm-rec-card" href="blog.html">
+            <h4>Blog</h4>
+            <p>Análisis y tendencias del sector geoespacial</p>
+          </a>
+          <div class="mm-rec-cta">
+            <span class="mm-tag">Hablemos</span>
+            <h4>¿Tienes un proyecto en mente?</h4>
+            <p>Cuéntanos qué necesitas y te armamos una propuesta a la medida.</p>
+            <a class="mm-btn" href="contacto.html">Cotiza tu proyecto</a>
+          </div>
+        </div>
+      </div>
       </li>
       <li><a href="contacto.html">Contacto</a></li>
     </ul>
@@ -183,6 +272,8 @@ footer{border-top:2px solid var(--naranja);padding:70px 0 30px;background:#05050
     <button class="burger" aria-label="Abrir menú" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
   </div>
 </header>
+
+<div class="mm-backdrop" aria-hidden="true"></div>
 
 <section class="page-hero">
   <div class="container">
@@ -267,6 +358,27 @@ footer{border-top:2px solid var(--naranja);padding:70px 0 30px;background:#05050
       }
     });
   });
+})();
+</script>
+
+<script>
+/* Backdrop oscuro al abrir los mega-menús (solo escritorio) */
+(function(){
+  var body = document.body;
+  var backdrop = document.querySelector('.mm-backdrop');
+  var megas = document.querySelectorAll('.nav .has-dropdown--mega');
+  var desk = window.matchMedia('(min-width:1051px)');
+  function open(){ if (desk.matches) body.classList.add('mm-open'); }
+  function close(){ body.classList.remove('mm-open'); }
+  megas.forEach(function(li){
+    li.addEventListener('mouseenter', open);
+    li.addEventListener('mouseleave', close);
+    li.addEventListener('focusin', open);
+    li.addEventListener('focusout', function(e){ if (!li.contains(e.relatedTarget)) close(); });
+  });
+  if (backdrop) backdrop.addEventListener('click', close);
+  desk.addEventListener('change', close);
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); });
 })();
 </script>
 </body>
