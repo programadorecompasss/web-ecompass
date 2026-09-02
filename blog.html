@@ -190,12 +190,19 @@ body.mm-open .mm-backdrop{opacity:1;visibility:visible;pointer-events:auto}
   .mm-serv-feat{grid-column:auto;grid-row:auto;border-left:none;padding-left:0;border-top:1px solid var(--linea);padding-top:18px;margin-top:8px}
   .mm-rec-card{padding:16px 18px}
   .mm-rec-cta{min-height:220px;margin-top:4px}
+  .nav .dropdown-menu.mm-drones{position:static;left:auto;right:auto;margin-top:0;padding:0;border:none;box-shadow:none;background:transparent}
+  .nav .dropdown-menu.mm-drones.is-open{padding:4px 0 12px}
+  .mm-drones-layout{grid-template-columns:1fr;gap:12px}
 }
-/* Dropdown "Drones": oscuro -> claro (como Servicios) */
-.nav .dropdown-menu#drones-menu{background:#fff;border:1px solid var(--linea);border-bottom:3px solid var(--linea);box-shadow:0 20px 42px rgba(0,0,0,.13)}
-#drones-menu li a{color:#1a1a1a}
-#drones-menu li a:hover,#drones-menu li a:focus-visible{color:var(--naranja);background:rgba(255,117,20,.06)}
-#drones-menu li a.active{color:var(--naranja)}
+/* Dropdown "Drones": mega panel blanco con 4 tarjetas (como "Recursos") */
+.nav .dropdown-menu.mm-drones{position:absolute;top:100%;left:24px;right:24px;min-width:0;margin-top:10px;display:block;background:#fff;border:1px solid var(--linea);border-bottom:3px solid var(--linea);box-shadow:0 20px 42px rgba(0,0,0,.13);padding:34px 40px 38px;z-index:150}
+.mm-drones-layout{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;align-items:stretch}
+.mm-drone-card{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--linea);padding:22px;transition:border-color .2s ease,background .2s ease}
+.mm-drone-card:hover,.mm-drone-card:focus-visible{border-color:var(--naranja);background:#fff}
+.mm-drone-card[aria-current]{border-color:var(--naranja)}
+.mm-drone-card h4{font-family:var(--body);font-weight:700;font-size:1.05rem;color:#111;margin:0 0 14px;line-height:1.2}
+.mm-drone-card:hover h4,.mm-drone-card:focus-visible h4{color:var(--naranja)}
+.mm-drone-card img{width:100%;aspect-ratio:4/3;object-fit:contain;background:#fff;border:1px solid var(--linea);display:block}
 </style>
 </head>
 <body>
@@ -244,14 +251,29 @@ body.mm-open .mm-backdrop{opacity:1;visibility:visible;pointer-events:auto}
         </div>
       </div>
       </li>
-      <li class="has-dropdown">
+      <li class="has-dropdown has-dropdown--mega">
         <a href="drones/ebee-x.html" class="dropdown-toggle" data-dropdown="drones">Drones <span class="caret">▾</span></a>
-        <ul class="dropdown-menu" id="drones-menu">
-          <li><a href="drones/ebee-x.html">eBee X</a></li>
-          <li><a href="drones/ebee-vision.html">eBee VISION</a></li>
-          <li><a href="drones/ebee-tac.html">eBee TAC</a></li>
-          <li><a href="drones/ebee-tac-seguridad.html">eBee TAC Seguridad Pública</a></li>
-        </ul>
+        <div class="dropdown-menu dropdown-menu--mega mm-drones" id="drones-menu">
+          <div class="mm-eyebrow">Drones</div>
+          <div class="mm-drones-layout">
+            <a class="mm-drone-card" href="drones/ebee-x.html">
+              <h4>eBee X</h4>
+              <img src="https://www.ecompass.co/wp-content/uploads/2025/09/eBee-X-eCompass.webp" alt="Dron eBee X" loading="lazy">
+            </a>
+            <a class="mm-drone-card" href="drones/ebee-vision.html">
+              <h4>eBee VISION</h4>
+              <img src="https://www.ecompass.co/wp-content/uploads/2025/09/eBee-Vision-eCompass.webp" alt="Dron eBee VISION" loading="lazy">
+            </a>
+            <a class="mm-drone-card" href="drones/ebee-tac.html">
+              <h4>eBee TAC</h4>
+              <img src="https://www.ecompass.co/wp-content/uploads/2025/09/eBee-TAC-eCompass.webp" alt="Dron eBee TAC" loading="lazy">
+            </a>
+            <a class="mm-drone-card" href="drones/ebee-tac-seguridad.html">
+              <h4>eBee TAC Seguridad Pública</h4>
+              <img src="https://www.ecompass.co/wp-content/uploads/2025/09/eBee-TAC-SEGURIDAD-eCompass.webp" alt="Dron eBee TAC Seguridad Pública" loading="lazy">
+            </a>
+          </div>
+        </div>
       </li>
       <li class="has-dropdown has-dropdown--mega">
         <a href="recursos.html" class="dropdown-toggle active" data-dropdown="recursos">Recursos <span class="caret">▾</span></a>
