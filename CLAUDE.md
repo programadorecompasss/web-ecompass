@@ -1,6 +1,6 @@
 # Proyecto: Rediseño web eCompass SAS
 - Empresa colombiana de geomática: LiDAR, fotogrametría, mobile mapping (Trimble MX50), Gaussian Splatting, BIM, SIG (Esri Partner), topografía, catastro, drones (eBee X, eBee VISION, eBee TAC, eBee TAC Seguridad Pública, Matrice 350 RTK — distribuidor autorizado AgEagle en Colombia), venta de equipos.
-- 12+ años, 170+ proyectos, 100+ clientes.
+- 13 años (cumplidos en 2026), 170+ proyectos, 100+ clientes.
 
 ## Identidad visual (NUNCA cambiar sin autorización)
 Alineada al manual de marca oficial recibido.
