@@ -105,6 +105,10 @@ a.mega-card:hover h4{text-decoration:underline;text-decoration-color:var(--naran
 .contact-info .ico2{flex:none;width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:rgba(255,107,0,.12);color:var(--naranja);clip-path:polygon(0 0,100% 0,100% 75%,75% 100%,0 100%)}
 .badges{display:flex;gap:10px;flex-wrap:wrap;margin:4px 0 24px}
 .badge{display:inline-block;background:var(--naranja);color:#000;font-weight:800;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;padding:6px 12px}
+.badge--logo{display:inline-flex;align-items:center;gap:7px;line-height:1}
+.badge-logo{display:block;width:auto;max-width:100%;height:22px}
+.badge-logo--esri{height:18px}
+a.badge:hover{opacity:.88}
 .contact-info .socials{margin:2px 0 26px}
 .contact-info .socials a{border-color:var(--linea)}
 .contact-form{background:#fff;padding:40px;display:flex;flex-direction:column;gap:16px}
@@ -403,8 +407,8 @@ body.mm-open .mm-backdrop{opacity:1;visibility:visible;pointer-events:auto}
         </div>
 
         <div class="badges">
-          <span class="badge">Esri Partner</span>
-          <span class="badge">Distribuidor AgEagle</span>
+          <span class="badge badge--logo"><img src="img/logo-esri-blanco02.png" alt="Esri Partner Network" class="badge-logo badge-logo--esri"></span>
+          <a class="badge badge--logo" href="https://eaglenxt.com/" target="_blank" rel="noopener noreferrer">Distribuidor de <img src="img/eagle-nxt.png" alt="Eagle NXT" class="badge-logo"></a>
         </div>
       </div>
 
