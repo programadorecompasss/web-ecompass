@@ -158,11 +158,14 @@ footer{border-top:2px solid var(--naranja);padding:70px 0 30px;background:#05050
 /* ===== Rediseño mega-menús (Servicios claro / Recursos oscuro) ===== */
 .mm-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.55);opacity:0;visibility:hidden;transition:opacity .25s ease,visibility .25s ease;z-index:90;pointer-events:none}
 body.mm-open .mm-backdrop{opacity:1;visibility:visible;pointer-events:auto}
+/* FIX ancho: el <li> del mega debe ser static para que el panel se mida contra .nav
+   (position:relative), no contra el boton. Vence a ".nav ul li.has-dropdown" por orden. */
+.nav ul li.has-dropdown.has-dropdown--mega{position:static}
 
 /* --- Servicios: panel claro, ancho completo --- */
 .nav .dropdown-menu.mm-servicios{position:absolute;top:100%;left:24px;right:24px;min-width:0;margin-top:10px;display:block;background:#fff;border:1px solid var(--linea);border-bottom:3px solid var(--linea);box-shadow:0 20px 42px rgba(0,0,0,.13);padding:32px 40px 34px;z-index:150}
 .mm-serv-head{font-family:var(--body);font-weight:700;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:#1a1a1a;padding-bottom:12px;border-bottom:1px solid var(--linea);margin-bottom:24px}
-.mm-serv-layout{display:grid;grid-template-columns:repeat(4,1fr) 288px;grid-template-rows:auto auto;gap:26px 40px;align-items:start}
+.mm-serv-layout{display:grid;grid-template-columns:repeat(4,1fr) 256px;grid-template-rows:auto auto;gap:22px 30px;align-items:start}
 .mm-serv-col{display:flex;flex-direction:column;gap:16px;grid-row:1}
 .mm-serv-col a{font-family:var(--body);font-weight:500;font-size:.9rem;color:#1a1a1a;line-height:1.3;transition:color .15s ease}
 .mm-serv-col a:hover,.mm-serv-col a:focus-visible{color:var(--naranja)}
@@ -175,12 +178,12 @@ body.mm-open .mm-backdrop{opacity:1;visibility:visible;pointer-events:auto}
 .mm-serv-feat .mm-arrow:hover{text-decoration:underline;text-underline-offset:3px}
 
 /* --- Recursos: panel oscuro, ancho completo, marca de agua --- */
-.nav .dropdown-menu.mm-recursos{position:absolute;top:100%;left:24px;right:24px;min-width:0;margin-top:10px;display:block;background:#000;border:1px solid rgba(255,255,255,.14);padding:34px 40px 38px;overflow:hidden;z-index:150}
+.nav .dropdown-menu.mm-recursos{position:absolute;top:100%;left:24px;right:24px;min-width:0;margin-top:10px;display:block;background:#000;border:1px solid rgba(255,255,255,.14);box-shadow:0 22px 46px rgba(0,0,0,.45);padding:34px 40px 38px;overflow:hidden;z-index:150}
 .mm-recursos::before{content:"";position:absolute;right:-60px;top:50%;width:440px;height:440px;transform:translateY(-50%);background:url('../img/apple-touch-icon.png') center/contain no-repeat;filter:grayscale(1) brightness(3) blur(1px);opacity:.05;pointer-events:none}
 .mm-recursos > *{position:relative;z-index:1}
 .mm-eyebrow{display:flex;align-items:center;gap:16px;font-family:var(--body);font-weight:700;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--naranja);margin-bottom:24px}
 .mm-eyebrow::after{content:"";flex:1;height:1px;background:rgba(255,255,255,.18)}
-.mm-rec-layout{display:grid;grid-template-columns:1fr 1fr 1fr 320px;gap:18px;align-items:stretch}
+.mm-rec-layout{display:grid;grid-template-columns:repeat(3,1fr) 300px;gap:18px;align-items:stretch}
 .mm-rec-card{display:flex;flex-direction:column;background:#111;border:1px solid rgba(255,255,255,.12);padding:22px 22px 24px;transition:border-color .2s ease,background .2s ease}
 .mm-rec-card:hover,.mm-rec-card:focus-visible{border-color:var(--naranja);background:#171717}
 .mm-rec-card h4{font-family:var(--body);font-weight:700;font-size:1.05rem;color:#fff;margin:0 0 8px;line-height:1.2}
