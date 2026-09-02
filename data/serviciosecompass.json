@@ -1,0 +1,1320 @@
+[
+  {
+    "nombre_linea": "Control Geodésico y Posicionamiento",
+    "descripcion_corta": "Soluciones de posicionamiento y control geodésico de alta precisión para garantizar la georreferenciación, trazabilidad y consistencia espacial de proyectos.",
+    "que_hacemos": "Diseñamos, materializamos, observamos y verificamos redes y puntos de control geodésico para establecer una referencia espacial confiable durante todo el ciclo de un proyecto.",
+    "servicios_productos": [
+      {
+        "codigo": "1.1",
+        "nombre": "Redes y control geodésico",
+        "detalle": "Diseño y establecimiento de redes; materialización y densificación de puntos; control horizontal y vertical."
+      },
+      {
+        "codigo": "1.2",
+        "nombre": "Posicionamiento GNSS",
+        "detalle": "Levantamientos estáticos, RTK y cinemáticos; posicionamiento de alta precisión y georreferenciación."
+      },
+      {
+        "codigo": "1.3",
+        "nombre": "Nivelación y control altimétrico",
+        "detalle": "Nivelación geométrica y de precisión; control de cotas y redes altimétricas."
+      },
+      {
+        "codigo": "1.4",
+        "nombre": "Georreferenciación de proyectos",
+        "detalle": "Amarre al marco oficial; transformación entre sistemas de referencia y verificación de coordenadas."
+      },
+      {
+        "codigo": "1.5",
+        "nombre": "Replanteo y control de obra",
+        "detalle": "Replanteo de puntos, ejes y elementos; control geométrico y seguimiento topográfico."
+      },
+      {
+        "codigo": "1.6",
+        "nombre": "Control y comprobación independiente",
+        "detalle": "Puntos de chequeo, auditoría de control geodésico de terceros y validación de precisión."
+      },
+      {
+        "codigo": "1.7",
+        "nombre": "Posicionamiento continuo y monitoreo",
+        "detalle": "Estaciones base de proyecto, redes repetibles y seguimiento de deformaciones."
+      }
+    ],
+    "entregables": [
+      "Coordenadas ajustadas y certificadas.",
+      "Red geodésica y puntos materializados.",
+      "Monografías de vértices.",
+      "Reportes de observación, procesamiento y ajuste.",
+      "Informes de precisión y comprobación.",
+      "Información georreferenciada en el sistema requerido."
+    ],
+    "aplicaciones": [
+      "Infraestructura vial y ferroviaria.",
+      "Catastro y gestión predial.",
+      "Arquitectura, ingeniería y construcción.",
+      "Industria y minería.",
+      "Recursos hídricos.",
+      "Monitoreo de deformaciones."
+    ],
+    "tecnologias": [
+      "Receptores GNSS.",
+      "Estaciones totales.",
+      "Niveles digitales.",
+      "Redes RTK / NTRIP.",
+      "Software de procesamiento geodésico.",
+      "Herramientas SIG."
+    ],
+    "normativa": [
+      "Marco oficial MAGNA-SIRGAS / IGAC, cuando corresponda.",
+      "Especificaciones técnicas del proyecto o entidad contratante.",
+      "Parámetros de exactitud y control definidos para cada producto."
+    ],
+    "tarjeta": {
+      "titulo": "CONTROL GEODÉSICO Y POSICIONAMIENTO",
+      "texto_corto": "Soluciones de posicionamiento y control geodésico de alta precisión para garantizar la georreferenciación, trazabilidad y consistencia espacial de proyectos.",
+      "contenido_visible": "REDES GEODÉSICAS · GNSS · NIVELACIÓN · GEORREFERENCIACIÓN · REPLANTEO · CONTROL"
+    },
+    "slug": "control-geodesico-y-posicionamiento"
+  },
+  {
+    "nombre_linea": "Levantamientos y Modelos del Terreno",
+    "descripcion_corta": "Levantamiento, representación y modelado preciso del terreno y la superficie para diseño, planeación, análisis y gestión de proyectos.",
+    "que_hacemos": "Integramos métodos topográficos, fotogramétricos, LiDAR y batimétricos para producir información métrica del terreno conforme al nivel de detalle y precisión requerido.",
+    "servicios_productos": [
+      {
+        "codigo": "2.1",
+        "nombre": "Levantamientos topográficos",
+        "detalle": "Levantamientos planimétricos y altimétricos para proyectos de ingeniería y territorio."
+      },
+      {
+        "codigo": "2.2",
+        "nombre": "Ortofotografía y cartografía",
+        "detalle": "Captura fotogramétrica, ortomosaicos, restitución y cartografía."
+      },
+      {
+        "codigo": "2.3",
+        "nombre": "Modelos digitales",
+        "detalle": "MDT, MDS, modelos de elevación, curvas de nivel, perfiles y secciones."
+      },
+      {
+        "codigo": "2.4",
+        "nombre": "Nubes de puntos y clasificación",
+        "detalle": "Nubes fotogramétricas o LiDAR, clasificación de terreno y elementos de superficie."
+      },
+      {
+        "codigo": "2.5",
+        "nombre": "Volumetrías y superficies",
+        "detalle": "Cálculo de acopios, patios, movimientos de tierra y superficies de control."
+      },
+      {
+        "codigo": "2.6",
+        "nombre": "Corredores y servidumbres",
+        "detalle": "Levantamientos lineales para vías, redes, servidumbres y negociación predial."
+      },
+      {
+        "codigo": "2.7",
+        "nombre": "Batimetría y topobatimetría",
+        "detalle": "Perfiles, secciones, profundidades, modelado de fondos e integración topografía–batimetría."
+      },
+      {
+        "codigo": "2.8",
+        "nombre": "Cartografía para estudios y trámites",
+        "detalle": "Productos a escalas y especificaciones requeridas por proyectos o autoridades."
+      }
+    ],
+    "entregables": [
+      "Ortoimágenes y ortomosaicos.",
+      "MDT / MDS y modelos de elevación.",
+      "Nubes de puntos clasificadas.",
+      "Curvas de nivel, perfiles y secciones.",
+      "Cartografía y planos.",
+      "Informes de precisión y control de calidad.",
+      "Superficies y reportes volumétricos.",
+      "Modelos topobatimétricos."
+    ],
+    "aplicaciones": [
+      "Ingeniería y construcción.",
+      "Infraestructura vial y ferroviaria.",
+      "Minería.",
+      "Recursos hídricos e hidráulicos.",
+      "Catastro y territorio.",
+      "Medio ambiente.",
+      "Industria y energía."
+    ],
+    "tecnologias": [
+      "Topografía convencional y GNSS.",
+      "UAS / drones.",
+      "Fotogrametría.",
+      "LiDAR aéreo.",
+      "Sensores RGB.",
+      "Sistemas batimétricos e hidrográficos.",
+      "Software de procesamiento y SIG."
+    ],
+    "normativa": [
+      "Especificaciones de exactitud aplicables al producto.",
+      "ASPRS para productos geoespaciales digitales, cuando aplique.",
+      "IHO S-44 para levantamientos hidrográficos, cuando aplique.",
+      "Marco de referencia oficial y requerimientos contractuales."
+    ],
+    "tarjeta": {
+      "titulo": "LEVANTAMIENTOS Y MODELOS DEL TERRENO",
+      "texto_corto": "Levantamiento, representación y modelado preciso del terreno y la superficie para diseño, planeación, análisis y gestión de proyectos.",
+      "contenido_visible": "TOPOGRAFÍA · FOTOGRAMETRÍA · LiDAR · MDT/MDS · CARTOGRAFÍA · BATIMETRÍA"
+    },
+    "slug": "levantamientos-y-modelos-del-terreno"
+  },
+  {
+    "nombre_linea": "Documentación Digital de Activos Existentes – As-Built / Scan to BIM",
+    "descripcion_corta": "Captura y modelado digital de condiciones existentes para documentar con precisión edificaciones, plantas, infraestructura y activos.",
+    "que_hacemos": "Convertimos condiciones físicas existentes en nubes de puntos, planos, modelos 3D y modelos BIM que soportan diseño, operación, mantenimiento y gestión de activos.",
+    "servicios_productos": [
+      {
+        "codigo": "3.1",
+        "nombre": "Levantamiento 3D de condiciones existentes",
+        "detalle": "Captura tridimensional de edificaciones, plantas, instalaciones e infraestructura."
+      },
+      {
+        "codigo": "3.2",
+        "nombre": "Nubes de puntos registradas",
+        "detalle": "Registro, georreferenciación y entrega de nubes de puntos de alta densidad."
+      },
+      {
+        "codigo": "3.3",
+        "nombre": "Planos As-Built",
+        "detalle": "Extracción de geometrías, dimensiones y documentación 2D de condiciones existentes."
+      },
+      {
+        "codigo": "3.4",
+        "nombre": "Scan to BIM",
+        "detalle": "Modelado BIM a partir de nubes de puntos."
+      },
+      {
+        "codigo": "3.5",
+        "nombre": "Modelado arquitectónico y estructural",
+        "detalle": "Modelos de arquitectura, estructura e infraestructura existente."
+      },
+      {
+        "codigo": "3.6",
+        "nombre": "Modelado de instalaciones y redes",
+        "detalle": "Modelado de tuberías, redes y componentes visibles."
+      },
+      {
+        "codigo": "3.7",
+        "nombre": "Verificación dimensional",
+        "detalle": "Control de geometría y dimensiones para coordinación y montaje."
+      },
+      {
+        "codigo": "3.8",
+        "nombre": "Documentación patrimonial y espacial",
+        "detalle": "Expedientes digitales, modelos y visualización de bienes o espacios de interés."
+      }
+    ],
+    "entregables": [
+      "Nubes de puntos registradas y georreferenciadas.",
+      "Planos As-Built.",
+      "Modelos BIM As-Built.",
+      "Modelos 3D.",
+      "Reportes dimensionales.",
+      "Archivos interoperables CAD/BIM.",
+      "Visores y documentación digital del activo."
+    ],
+    "aplicaciones": [
+      "Arquitectura, ingeniería y construcción.",
+      "Industria y plantas.",
+      "Patrimonio cultural.",
+      "Infraestructura.",
+      "Gestión de activos.",
+      "Portafolios inmobiliarios."
+    ],
+    "tecnologias": [
+      "Escaneo láser terrestre – TLS.",
+      "SLAM y mapeo 3D portátil.",
+      "LiDAR.",
+      "Fotogrametría.",
+      "Imágenes 360°.",
+      "BIM / CAD."
+    ],
+    "normativa": [
+      "ISO 19650 para gestión de información BIM, cuando aplique.",
+      "USIBD LOA para exactitud de condiciones existentes, cuando aplique.",
+      "BIMForum LOD para nivel de desarrollo del modelo.",
+      "Especificaciones del cliente para formatos y entregables."
+    ],
+    "tarjeta": {
+      "titulo": "DOCUMENTACIÓN DIGITAL DE ACTIVOS EXISTENTES – AS-BUILT / SCAN TO BIM",
+      "texto_corto": "Captura y modelado digital de condiciones existentes para documentar con precisión edificaciones, plantas, infraestructura y activos.",
+      "contenido_visible": "AS-BUILT · TLS · SLAM · NUBE DE PUNTOS · SCAN TO BIM · MODELADO 3D"
+    },
+    "slug": "documentacion-digital-de-activos-existentes-as-built-scan-to-bim"
+  },
+  {
+    "nombre_linea": "Inventarios y Diagnóstico de Infraestructura",
+    "descripcion_corta": "Levantamiento, identificación y estructuración de activos e indicadores para conocer el estado, geometría y composición de la infraestructura.",
+    "que_hacemos": "Capturamos y organizamos información masiva de infraestructura para convertirla en inventarios georreferenciados, indicadores y bases de datos útiles para operación, mantenimiento e interventoría.",
+    "servicios_productos": [
+      {
+        "codigo": "4.1",
+        "nombre": "Inventarios viales",
+        "detalle": "Calzada, señalización, drenajes, mobiliario, obras de arte y elementos de seguridad."
+      },
+      {
+        "codigo": "4.2",
+        "nombre": "Inventarios de activos",
+        "detalle": "Identificación, localización, clasificación y atributos de activos de infraestructura."
+      },
+      {
+        "codigo": "4.3",
+        "nombre": "Geometría vial y ferroviaria",
+        "detalle": "Caracterización geométrica de corredores y análisis de gálibos cuando aplique."
+      },
+      {
+        "codigo": "4.4",
+        "nombre": "Diagnóstico de pavimentos",
+        "detalle": "Inventario de daños y fallas; PCI y otros indicadores según alcance."
+      },
+      {
+        "codigo": "4.5",
+        "nombre": "IRI y perfil longitudinal",
+        "detalle": "Medición o integración del índice de rugosidad conforme al método especificado."
+      },
+      {
+        "codigo": "4.6",
+        "nombre": "Infraestructura eléctrica y telecomunicaciones",
+        "detalle": "Torres, estructuras, vanos, catenarias, fibra y elementos asociados."
+      },
+      {
+        "codigo": "4.7",
+        "nombre": "Catastro de redes visibles",
+        "detalle": "Elementos de acueducto, alcantarillado, gas y otras redes observables."
+      },
+      {
+        "codigo": "4.8",
+        "nombre": "Inventario topográfico especializado",
+        "detalle": "Bancos, taludes, vías internas, riego, drenaje y otros activos sectoriales."
+      }
+    ],
+    "entregables": [
+      "Inventarios georreferenciados.",
+      "Bases de datos de activos.",
+      "Cartografía de infraestructura.",
+      "Nubes de puntos e imágenes 360°.",
+      "Indicadores y reportes de condición.",
+      "Geodatabases y capas SIG.",
+      "Reportes para interventoría y mantenimiento."
+    ],
+    "aplicaciones": [
+      "Infraestructura vial.",
+      "Ferrocarriles.",
+      "Servicios públicos.",
+      "Energía y telecomunicaciones.",
+      "Minería.",
+      "Ciudades y espacio público.",
+      "Concesiones e interventorías."
+    ],
+    "tecnologias": [
+      "Mobile Mapping.",
+      "LiDAR e imágenes 360°.",
+      "GNSS y topografía.",
+      "Fotogrametría.",
+      "TLS / SLAM.",
+      "Plataformas SIG."
+    ],
+    "normativa": [
+      "Especificaciones técnicas y métodos definidos por contrato.",
+      "Metodologías de inventario y evaluación requeridas por la entidad o concesión.",
+      "Criterios de calidad y trazabilidad de datos del proyecto."
+    ],
+    "tarjeta": {
+      "titulo": "INVENTARIOS Y DIAGNÓSTICO DE INFRAESTRUCTURA",
+      "texto_corto": "Levantamiento, identificación y estructuración de activos e indicadores para conocer el estado, geometría y composición de la infraestructura.",
+      "contenido_visible": "MOBILE MAPPING · INVENTARIOS · ACTIVOS · VÍAS · FERROCARRILES · INDICADORES"
+    },
+    "slug": "inventarios-y-diagnostico-de-infraestructura"
+  },
+  {
+    "nombre_linea": "Inspección y Monitoreo",
+    "descripcion_corta": "Inspección, seguimiento y comparación periódica de activos, estructuras y territorio mediante captura geoespacial y sensores especializados.",
+    "que_hacemos": "Generamos evidencia georreferenciada y medible para detectar cambios, documentar condiciones y apoyar decisiones de mantenimiento, operación y gestión del riesgo.",
+    "servicios_productos": [
+      {
+        "codigo": "5.1",
+        "nombre": "Inspección visual y remota",
+        "detalle": "Documentación de estructuras, edificaciones, redes e instalaciones."
+      },
+      {
+        "codigo": "5.2",
+        "nombre": "Inspección térmica y multiespectral",
+        "detalle": "Captura y análisis de información especializada cuando aplique."
+      },
+      {
+        "codigo": "5.3",
+        "nombre": "Seguimiento multitemporal",
+        "detalle": "Comparación de campañas para identificar cambios y evolución."
+      },
+      {
+        "codigo": "5.4",
+        "nombre": "Monitoreo de taludes y botaderos",
+        "detalle": "Seguimiento geométrico, volumétrico y de estabilidad según alcance."
+      },
+      {
+        "codigo": "5.5",
+        "nombre": "Monitoreo de presas y estructuras",
+        "detalle": "Campañas repetibles de control y documentación."
+      },
+      {
+        "codigo": "5.6",
+        "nombre": "Seguimiento de avance de obra",
+        "detalle": "Registro periódico de avance físico y condiciones de proyecto."
+      },
+      {
+        "codigo": "5.7",
+        "nombre": "Conciliación de volúmenes",
+        "detalle": "Mediciones recurrentes de explotación, inventarios o acopios."
+      },
+      {
+        "codigo": "5.8",
+        "nombre": "Evaluación rápida postevento",
+        "detalle": "Documentación de daños después de inundación, sismo o deslizamiento."
+      }
+    ],
+    "entregables": [
+      "Reportes de inspección.",
+      "Registro fotográfico y georreferenciado.",
+      "Mapas de hallazgos.",
+      "Comparativos multitemporales.",
+      "Nubes de puntos y modelos de cambio.",
+      "Reportes volumétricos.",
+      "Tableros o capas SIG para seguimiento."
+    ],
+    "aplicaciones": [
+      "Infraestructura vial y ferroviaria.",
+      "Industria y plantas.",
+      "Minería.",
+      "Energía e hidrocarburos.",
+      "Recursos hídricos.",
+      "Gestión del riesgo.",
+      "Construcción."
+    ],
+    "tecnologias": [
+      "UAS / drones.",
+      "LiDAR.",
+      "Cámaras RGB, térmicas y multiespectrales.",
+      "TLS / SLAM.",
+      "GNSS.",
+      "SIG y analítica geoespacial."
+    ],
+    "normativa": [
+      "Especificaciones de inspección definidas por el activo o contrato.",
+      "Protocolos de captura repetible y control de calidad.",
+      "Diagnósticos especializados se desarrollan con el profesional competente cuando aplique."
+    ],
+    "tarjeta": {
+      "titulo": "INSPECCIÓN Y MONITOREO",
+      "texto_corto": "Inspección, seguimiento y comparación periódica de activos, estructuras y territorio mediante captura geoespacial y sensores especializados.",
+      "contenido_visible": "INSPECCIÓN · MONITOREO · CAMBIO · TERMOGRAFÍA · VOLUMETRÍA · SEGUIMIENTO"
+    },
+    "slug": "inspeccion-y-monitoreo"
+  },
+  {
+    "nombre_linea": "Soluciones SIG y Gestión de Información Geoespacial",
+    "descripcion_corta": "Diseño, estructuración, integración y explotación de información geoespacial para apoyar decisiones, operación y gestión institucional.",
+    "que_hacemos": "Organizamos datos dispersos en soluciones SIG interoperables, controladas y actualizables, con modelos de datos, análisis, automatización y visualización.",
+    "servicios_productos": [
+      {
+        "codigo": "6.1",
+        "nombre": "Diseño y estructuración SIG",
+        "detalle": "Arquitectura de información, modelos de datos y geodatabases."
+      },
+      {
+        "codigo": "6.2",
+        "nombre": "Integración y migración de información",
+        "detalle": "Depuración, homologación y consolidación de fuentes geoespaciales."
+      },
+      {
+        "codigo": "6.3",
+        "nombre": "Análisis espacial y geoprocesamiento",
+        "detalle": "Procesos analíticos y generación de productos derivados."
+      },
+      {
+        "codigo": "6.4",
+        "nombre": "Automatización geoespacial",
+        "detalle": "Flujos repetibles para procesamiento, control y actualización."
+      },
+      {
+        "codigo": "6.5",
+        "nombre": "Geoportales y visores",
+        "detalle": "Publicación y consulta de información geográfica."
+      },
+      {
+        "codigo": "6.6",
+        "nombre": "Gobierno y madurez geoespacial",
+        "detalle": "Diagnóstico, hoja de ruta, políticas y organización de la información."
+      },
+      {
+        "codigo": "6.7",
+        "nombre": "Calidad, metadatos e interoperabilidad",
+        "detalle": "Catálogos, evaluación de calidad, metadatos y servicios interoperables."
+      },
+      {
+        "codigo": "6.8",
+        "nombre": "Integración BIM–GIS y multisensor",
+        "detalle": "Conexión de modelos, activos y datos provenientes de diferentes tecnologías."
+      }
+    ],
+    "entregables": [
+      "Geodatabases.",
+      "Modelos y catálogos de datos.",
+      "Capas y cartografía temática.",
+      "Geoportales y visores.",
+      "Servicios geográficos.",
+      "Flujos automatizados.",
+      "Metadatos e informes de calidad.",
+      "Tableros y herramientas de consulta."
+    ],
+    "aplicaciones": [
+      "Gestión territorial.",
+      "Infraestructura.",
+      "Servicios públicos.",
+      "Medio ambiente.",
+      "Catastro.",
+      "Industria.",
+      "Gestión de activos y organizaciones."
+    ],
+    "tecnologias": [
+      "ArcGIS y ecosistemas SIG.",
+      "Bases de datos espaciales.",
+      "Herramientas de automatización.",
+      "Servicios web geográficos.",
+      "BIM y formatos interoperables.",
+      "Fuentes GNSS, LiDAR, UAS, Mobile Mapping y satélite."
+    ],
+    "normativa": [
+      "ISO 19115 para metadatos, cuando aplique.",
+      "ISO 19157 para calidad de datos geográficos, cuando aplique.",
+      "Estándares OGC para interoperabilidad.",
+      "Lineamientos nacionales o institucionales de datos espaciales."
+    ],
+    "tarjeta": {
+      "titulo": "SOLUCIONES SIG Y GESTIÓN DE INFORMACIÓN GEOESPACIAL",
+      "texto_corto": "Diseño, estructuración, integración y explotación de información geoespacial para apoyar decisiones, operación y gestión institucional.",
+      "contenido_visible": "SIG · GEODATABASES · ANÁLISIS · AUTOMATIZACIÓN · VISORES · INTEROPERABILIDAD"
+    },
+    "slug": "soluciones-sig-y-gestion-de-informacion-geoespacial"
+  },
+  {
+    "nombre_linea": "Datos Geoespaciales como Producto – Content Delivery",
+    "descripcion_corta": "Suministro, actualización y licenciamiento de información geoespacial lista para consumo, integración y análisis.",
+    "que_hacemos": "Convertimos campañas de captura y bases históricas en productos de datos reutilizables, actualizables y entregables bajo esquemas de acceso o licenciamiento.",
+    "servicios_productos": [
+      {
+        "codigo": "7.1",
+        "nombre": "Datasets geoespaciales",
+        "detalle": "Conjuntos de datos estructurados por área, corredor, activo o tema."
+      },
+      {
+        "codigo": "7.2",
+        "nombre": "Ortoimágenes y datos de referencia",
+        "detalle": "Datos listos para planeación, catastro, ingeniería u otros usos."
+      },
+      {
+        "codigo": "7.3",
+        "nombre": "Nubes de puntos e imágenes",
+        "detalle": "Datos LiDAR, fotogramétricos y panorámicos bajo alcance definido."
+      },
+      {
+        "codigo": "7.4",
+        "nombre": "Cartografía y capas vectoriales",
+        "detalle": "Información temática y de referencia en formatos interoperables."
+      },
+      {
+        "codigo": "7.5",
+        "nombre": "Inventarios y bases de activos",
+        "detalle": "Datasets estructurados derivados de campañas de inventario."
+      },
+      {
+        "codigo": "7.6",
+        "nombre": "Captura bajo demanda",
+        "detalle": "Actualización o adquisición específica según requerimiento del cliente."
+      },
+      {
+        "codigo": "7.7",
+        "nombre": "Acceso histórico",
+        "detalle": "Consulta o suministro de información de campañas anteriores."
+      },
+      {
+        "codigo": "7.8",
+        "nombre": "Licenciamiento y suscripción",
+        "detalle": "Acceso recurrente, multiusuario o por periodo según modelo comercial."
+      }
+    ],
+    "entregables": [
+      "Datasets listos para consumo.",
+      "Nubes de puntos.",
+      "Imágenes y ortoimágenes.",
+      "Capas vectoriales y cartografía.",
+      "Geodatabases.",
+      "Metadatos y documentación.",
+      "Acceso a servicios o paquetes de datos."
+    ],
+    "aplicaciones": [
+      "Catastro y planeación.",
+      "Infraestructura y concesiones.",
+      "Aseguradoras y gestión del riesgo.",
+      "Industria.",
+      "Servicios públicos.",
+      "Investigación y análisis territorial."
+    ],
+    "tecnologias": [
+      "Repositorios y bases espaciales.",
+      "SIG.",
+      "Servicios web.",
+      "Fotogrametría y LiDAR.",
+      "Mobile Mapping.",
+      "Procesamiento geoespacial."
+    ],
+    "normativa": [
+      "ISO 19115 para metadatos, cuando aplique.",
+      "ISO 19157 para calidad de datos, cuando aplique.",
+      "Estándares OGC para servicios.",
+      "Políticas de licencia, uso y actualización definidas para cada dataset."
+    ],
+    "tarjeta": {
+      "titulo": "DATOS GEOESPACIALES COMO PRODUCTO – CONTENT DELIVERY",
+      "texto_corto": "Suministro, actualización y licenciamiento de información geoespacial lista para consumo, integración y análisis.",
+      "contenido_visible": "DATASETS · ORTOIMÁGENES · NUBES · CARTOGRAFÍA · INVENTARIOS · SUSCRIPCIÓN"
+    },
+    "slug": "datos-geoespaciales-como-producto-content-delivery"
+  },
+  {
+    "nombre_linea": "Catastro Multipropósito y Gestión Predial",
+    "descripcion_corta": "Producción y estructuración de información predial física, jurídica y geográfica conforme a las especificaciones del proceso catastral.",
+    "que_hacemos": "Acompañamos procesos catastrales mediante captura, reconocimiento, estructuración, control de calidad e interoperabilidad de información predial.",
+    "servicios_productos": [
+      {
+        "codigo": "8.1",
+        "nombre": "Insumos geográficos catastrales",
+        "detalle": "Ortoimagen y cartografía conforme a especificación oficial."
+      },
+      {
+        "codigo": "8.2",
+        "nombre": "Levantamiento predial masivo",
+        "detalle": "Identificación física de predios y linderos mediante barrido."
+      },
+      {
+        "codigo": "8.3",
+        "nombre": "Levantamiento predial puntual",
+        "detalle": "Captura por demanda para conservación, mutaciones o necesidades específicas."
+      },
+      {
+        "codigo": "8.4",
+        "nombre": "Reconocimiento predial",
+        "detalle": "Captura de componentes físicos y jurídicos según alcance."
+      },
+      {
+        "codigo": "8.5",
+        "nombre": "Estructuración LADM-COL",
+        "detalle": "Organización de la base de datos conforme al modelo vigente."
+      },
+      {
+        "codigo": "8.6",
+        "nombre": "Control de calidad catastral",
+        "detalle": "Validación de consistencia y calidad antes de radicación."
+      },
+      {
+        "codigo": "8.7",
+        "nombre": "Conciliación catastro–registro",
+        "detalle": "Identificación y gestión de inconsistencias."
+      },
+      {
+        "codigo": "8.8",
+        "nombre": "Cartografía y georreferenciación predial",
+        "detalle": "Planos, amarre al marco oficial e integración con SIG territorial."
+      }
+    ],
+    "entregables": [
+      "Bases de datos catastrales estructuradas.",
+      "Cartografía predial.",
+      "Ortoimágenes e insumos geográficos.",
+      "Reportes de calidad y consistencia.",
+      "Información georreferenciada.",
+      "Capas y productos para interoperabilidad."
+    ],
+    "aplicaciones": [
+      "Gestores y operadores catastrales.",
+      "Entes territoriales.",
+      "Gestión predial.",
+      "Planeación territorial.",
+      "Proyectos de tierras e infraestructura."
+    ],
+    "tecnologias": [
+      "GNSS y topografía.",
+      "Fotogrametría / UAS.",
+      "SIG y bases de datos espaciales.",
+      "Herramientas de validación y control.",
+      "Modelos de datos catastrales."
+    ],
+    "normativa": [
+      "Modelo LADM-COL vigente.",
+      "Resolución IGAC 1040 de 2023 y modificaciones aplicables.",
+      "Decreto 148 de 2020 y marco catastral vigente.",
+      "Marco oficial MAGNA-SIRGAS / IGAC."
+    ],
+    "tarjeta": {
+      "titulo": "CATASTRO MULTIPROPÓSITO Y GESTIÓN PREDIAL",
+      "texto_corto": "Producción y estructuración de información predial física, jurídica y geográfica conforme a las especificaciones del proceso catastral.",
+      "contenido_visible": "CATASTRO · LADM-COL · PREDIOS · BARRIDO · CALIDAD · INTEROPERABILIDAD"
+    },
+    "slug": "catastro-multiproposito-y-gestion-predial"
+  },
+  {
+    "nombre_linea": "Cumplimiento Regulatorio Geoespacial",
+    "descripcion_corta": "Preparación y estructuración de información geográfica conforme a especificaciones normativas y contractuales para trámites, reportes y obligaciones.",
+    "que_hacemos": "Traducimos requisitos de autoridades y contratos en productos geoespaciales verificables para que el cliente pueda presentar, sustentar y actualizar su información.",
+    "servicios_productos": [
+      {
+        "codigo": "9.1",
+        "nombre": "Ordenamiento territorial y riesgo",
+        "detalle": "Cartografía e insumos para POT, PBOT, EOT y estudios de amenaza y riesgo."
+      },
+      {
+        "codigo": "9.2",
+        "nombre": "Cumplimiento ambiental",
+        "detalle": "Geodatabases, capas y cartografía para EIA, DAA, PMA e informes de cumplimiento."
+      },
+      {
+        "codigo": "9.3",
+        "nombre": "Cumplimiento minero",
+        "detalle": "Cartografía temática, planos, delimitaciones e información requerida para reportes e instrumentos mineros."
+      },
+      {
+        "codigo": "9.4",
+        "nombre": "Cumplimiento en transporte y concesiones",
+        "detalle": "Indicadores, inventarios, documentación contractual y expedientes de reversión."
+      },
+      {
+        "codigo": "9.5",
+        "nombre": "Migración y validación previa a radicación",
+        "detalle": "Revisión geométrica, estructural y documental de información geográfica."
+      },
+      {
+        "codigo": "9.6",
+        "nombre": "Seguimiento de obligaciones",
+        "detalle": "Monitoreo y actualización geoespacial de compromisos, compensaciones y condiciones contractuales."
+      }
+    ],
+    "entregables": [
+      "Geodatabases conformes.",
+      "Cartografía y planos reglamentarios.",
+      "Expedientes geográficos.",
+      "Reportes de validación.",
+      "Inventarios e indicadores contractuales.",
+      "Información lista para radicación o entrega."
+    ],
+    "aplicaciones": [
+      "Ordenamiento territorial.",
+      "Medio ambiente.",
+      "Minería.",
+      "Concesiones y transporte.",
+      "Energía e hidrocarburos.",
+      "Infraestructura."
+    ],
+    "tecnologias": [
+      "SIG y geodatabases.",
+      "Topografía y GNSS.",
+      "Fotogrametría / LiDAR.",
+      "Monitoreo satelital.",
+      "Gestión documental geoespacial."
+    ],
+    "normativa": [
+      "Normativa y especificaciones de la autoridad competente.",
+      "Ley 388 de 1997 y Decreto 1077 de 2015, cuando aplique.",
+      "Decreto 1076 de 2015 y Resolución 2182 de 2016, cuando aplique.",
+      "Requisitos de ANM, ANI, INVÍAS o contrato aplicable."
+    ],
+    "tarjeta": {
+      "titulo": "CUMPLIMIENTO REGULATORIO GEOESPACIAL",
+      "texto_corto": "Preparación y estructuración de información geográfica conforme a especificaciones normativas y contractuales para trámites, reportes y obligaciones.",
+      "contenido_visible": "TRÁMITES · RADICACIÓN · AMBIENTAL · RIESGO · MINERÍA · CONCESIONES"
+    },
+    "slug": "cumplimiento-regulatorio-geoespacial"
+  },
+  {
+    "nombre_linea": "Redes Subterráneas y Gestión de Interferencias",
+    "descripcion_corta": "Localización, documentación y gestión de redes enterradas para reducir riesgo de daño, sobrecostos e interferencias durante diseño y construcción.",
+    "que_hacemos": "Integramos investigación documental, levantamiento de superficie y métodos de detección para entregar información de redes con un nivel de confiabilidad declarado.",
+    "servicios_productos": [
+      {
+        "codigo": "10.1",
+        "nombre": "Investigación documental",
+        "detalle": "Recopilación y revisión de registros existentes de redes."
+      },
+      {
+        "codigo": "10.2",
+        "nombre": "Levantamiento de elementos visibles",
+        "detalle": "Identificación de tapas, cámaras, válvulas y otros elementos de superficie."
+      },
+      {
+        "codigo": "10.3",
+        "nombre": "Detección no destructiva",
+        "detalle": "Designación de trazado mediante métodos geofísicos y electromagnéticos."
+      },
+      {
+        "codigo": "10.4",
+        "nombre": "Verificación de posición",
+        "detalle": "Confirmación horizontal y vertical mediante métodos directos cuando aplique."
+      },
+      {
+        "codigo": "10.5",
+        "nombre": "Planos de redes",
+        "detalle": "Representación en planta y perfil con nivel de calidad declarado."
+      },
+      {
+        "codigo": "10.6",
+        "nombre": "Modelado 3D de redes",
+        "detalle": "Modelos para coordinación con diseño y gestión de activos."
+      },
+      {
+        "codigo": "10.7",
+        "nombre": "Análisis de interferencias",
+        "detalle": "Cruce entre redes existentes y diseño propuesto."
+      },
+      {
+        "codigo": "10.8",
+        "nombre": "Catastro e integración SIG",
+        "detalle": "Estructuración de redes para el SIG corporativo del operador."
+      }
+    ],
+    "entregables": [
+      "Plano de redes en planta y perfil.",
+      "Modelo 3D de redes.",
+      "Base de datos/catastro de redes.",
+      "Mapa de interferencias.",
+      "Reporte de nivel de calidad o confiabilidad.",
+      "Capas SIG integrables."
+    ],
+    "aplicaciones": [
+      "Construcción urbana.",
+      "Concesiones viales.",
+      "Acueducto y alcantarillado.",
+      "Energía y gas.",
+      "Telecomunicaciones.",
+      "Industria y plantas."
+    ],
+    "tecnologias": [
+      "Georradar (GPR).",
+      "Localización electromagnética.",
+      "GNSS y topografía.",
+      "Inspección superficial.",
+      "Modelado 3D.",
+      "SIG."
+    ],
+    "normativa": [
+      "ASCE 38-22 para niveles de calidad del dato, cuando aplique.",
+      "ASCE 75-22 para registro e intercambio de información, cuando aplique.",
+      "Especificaciones del operador y del proyecto."
+    ],
+    "tarjeta": {
+      "titulo": "REDES SUBTERRÁNEAS Y GESTIÓN DE INTERFERENCIAS",
+      "texto_corto": "Localización, documentación y gestión de redes enterradas para reducir riesgo de daño, sobrecostos e interferencias durante diseño y construcción.",
+      "contenido_visible": "REDES ENTERRADAS · GPR · LOCALIZACIÓN · INTERFERENCIAS · CATÁSTRO DE REDES"
+    },
+    "slug": "redes-subterraneas-y-gestion-de-interferencias"
+  },
+  {
+    "nombre_linea": "Observación de la Tierra y Monitoreo Satelital",
+    "descripcion_corta": "Monitoreo de cambio, deformación y cobertura sobre grandes extensiones y periodos mediante información óptica y radar.",
+    "que_hacemos": "Procesamos series temporales satelitales para medir evolución territorial y generar información periódica sin depender de acceso físico continuo al sitio.",
+    "servicios_productos": [
+      {
+        "codigo": "11.1",
+        "nombre": "Línea base satelital",
+        "detalle": "Caracterización inicial de un área de interés."
+      },
+      {
+        "codigo": "11.2",
+        "nombre": "Series temporales ópticas y radar",
+        "detalle": "Seguimiento periódico de áreas, activos o corredores."
+      },
+      {
+        "codigo": "11.3",
+        "nombre": "Interferometría InSAR",
+        "detalle": "Medición de subsidencia y deformación del terreno."
+      },
+      {
+        "codigo": "11.4",
+        "nombre": "Monitoreo de taludes, botaderos y presas",
+        "detalle": "Seguimiento de cambio y deformación a escala territorial."
+      },
+      {
+        "codigo": "11.5",
+        "nombre": "Detección de cambios de cobertura",
+        "detalle": "Análisis multitemporal de vegetación, uso y transformación."
+      },
+      {
+        "codigo": "11.6",
+        "nombre": "Monitoreo de deforestación",
+        "detalle": "Seguimiento de pérdida o cambio de cobertura."
+      },
+      {
+        "codigo": "11.7",
+        "nombre": "Evaluación de eventos",
+        "detalle": "Cuantificación de áreas afectadas por inundación, incendio o deslizamiento."
+      },
+      {
+        "codigo": "11.8",
+        "nombre": "Alertas y reportes periódicos",
+        "detalle": "Seguimiento por umbrales y series temporales."
+      },
+      {
+        "codigo": "11.9",
+        "nombre": "Integración satélite–campo–SIG",
+        "detalle": "Cruce con información de campañas y sistemas corporativos."
+      }
+    ],
+    "entregables": [
+      "Series temporales.",
+      "Mapas de cambio y deformación.",
+      "Productos InSAR.",
+      "Reportes periódicos.",
+      "Áreas afectadas cuantificadas.",
+      "Capas y geodatabases.",
+      "Alertas y tableros de seguimiento."
+    ],
+    "aplicaciones": [
+      "Minería.",
+      "Hidrocarburos y ductos.",
+      "Presas y embalses.",
+      "Concesiones.",
+      "Medio ambiente.",
+      "Gestión del riesgo.",
+      "Clientes internacionales."
+    ],
+    "tecnologias": [
+      "Imágenes satelitales ópticas.",
+      "Radar SAR.",
+      "InSAR.",
+      "Procesamiento multitemporal.",
+      "SIG y analítica geoespacial."
+    ],
+    "normativa": [
+      "Especificaciones de calidad y resolución definidas para cada producto.",
+      "Metadatos y trazabilidad de fuentes.",
+      "Requisitos contractuales o regulatorios del sector cuando apliquen."
+    ],
+    "tarjeta": {
+      "titulo": "OBSERVACIÓN DE LA TIERRA Y MONITOREO SATELITAL",
+      "texto_corto": "Monitoreo de cambio, deformación y cobertura sobre grandes extensiones y periodos mediante información óptica y radar.",
+      "contenido_visible": "SATÉLITE · ÓPTICO · RADAR · InSAR · CAMBIO · DEFORMACIÓN · ALERTAS"
+    },
+    "slug": "observacion-de-la-tierra-y-monitoreo-satelital"
+  },
+  {
+    "nombre_linea": "Habilitación Técnica, Capacitación y Transferencia de Conocimiento",
+    "descripcion_corta": "Formación y acompañamiento para que organizaciones y equipos técnicos adopten, operen y sostengan capacidades geoespaciales de forma autónoma.",
+    "que_hacemos": "Transferimos conocimiento sobre tecnologías, flujos de trabajo, procesamiento y control de calidad mediante programas de formación y acompañamiento aplicado.",
+    "servicios_productos": [
+      {
+        "codigo": "12.1",
+        "nombre": "Capacitación por tecnología",
+        "detalle": "GNSS, fotogrametría, LiDAR, TLS, SLAM, Mobile Mapping y otras tecnologías."
+      },
+      {
+        "codigo": "12.2",
+        "nombre": "Formación SIG",
+        "detalle": "Plataformas, geodatabases, análisis y flujos geoespaciales."
+      },
+      {
+        "codigo": "12.3",
+        "nombre": "Puesta en marcha",
+        "detalle": "Configuración, acompañamiento y primer proyecto asistido."
+      },
+      {
+        "codigo": "12.4",
+        "nombre": "Procedimientos y control de calidad",
+        "detalle": "Diseño y auditoría de flujos de trabajo."
+      },
+      {
+        "codigo": "12.5",
+        "nombre": "Programas corporativos a la medida",
+        "detalle": "Formación cerrada para empresas y entidades."
+      },
+      {
+        "codigo": "12.6",
+        "nombre": "Actualización técnica periódica",
+        "detalle": "Programas recurrentes o por suscripción."
+      },
+      {
+        "codigo": "12.7",
+        "nombre": "Acompañamiento UAS",
+        "detalle": "Formación y soporte documental/operacional cuando corresponda al alcance."
+      }
+    ],
+    "entregables": [
+      "Plan de formación.",
+      "Material técnico.",
+      "Sesiones presenciales o virtuales.",
+      "Procedimientos y guías.",
+      "Proyecto acompañado.",
+      "Informe de auditoría o puesta en marcha.",
+      "Constancias o certificados internos según alcance."
+    ],
+    "aplicaciones": [
+      "Entidades públicas.",
+      "Empresas de ingeniería y geomática.",
+      "Industria.",
+      "Universidades.",
+      "Clientes que adquieren tecnología.",
+      "Equipos que internalizan capacidades."
+    ],
+    "tecnologias": [
+      "Equipos y software del portafolio geoespacial.",
+      "Plataformas SIG.",
+      "UAS y sensores.",
+      "Herramientas de procesamiento.",
+      "Entornos de formación presencial y virtual."
+    ],
+    "normativa": [
+      "RAC 100 y requisitos Aerocivil para el frente UAS, cuando aplique.",
+      "Procedimientos del fabricante y buenas prácticas técnicas.",
+      "Estándares propios del producto o flujo de trabajo capacitado."
+    ],
+    "tarjeta": {
+      "titulo": "HABILITACIÓN TÉCNICA, CAPACITACIÓN Y TRANSFERENCIA DE CONOCIMIENTO",
+      "texto_corto": "Formación y acompañamiento para que organizaciones y equipos técnicos adopten, operen y sostengan capacidades geoespaciales de forma autónoma.",
+      "contenido_visible": "CAPACITACIÓN · PUESTA EN MARCHA · PROCEDIMIENTOS · UAS · SIG · TRANSFERENCIA"
+    },
+    "slug": "habilitacion-tecnica-capacitacion-y-transferencia-de-conocimiento"
+  },
+  {
+    "nombre_linea": "Tecnología: Distribución, Soporte y Arriendo",
+    "descripcion_corta": "Acceso a tecnología geoespacial con selección, suministro, soporte y continuidad operativa respaldados localmente.",
+    "que_hacemos": "Acompañamos al cliente desde la selección de la solución hasta su operación, mantenimiento, arriendo, actualización y soporte.",
+    "servicios_productos": [
+      {
+        "codigo": "13.1",
+        "nombre": "Asesoría y dimensionamiento",
+        "detalle": "Selección de solución según necesidad, alcance y operación."
+      },
+      {
+        "codigo": "13.2",
+        "nombre": "Suministro de equipos",
+        "detalle": "Equipos de captura, accesorios y componentes."
+      },
+      {
+        "codigo": "13.3",
+        "nombre": "Suministro de software",
+        "detalle": "Licencias y herramientas geoespaciales."
+      },
+      {
+        "codigo": "13.4",
+        "nombre": "Soporte técnico y mantenimiento",
+        "detalle": "Atención operativa, diagnóstico y continuidad del servicio."
+      },
+      {
+        "codigo": "13.5",
+        "nombre": "Verificación y ajuste",
+        "detalle": "Revisión, configuración y certificación técnica cuando aplique."
+      },
+      {
+        "codigo": "13.6",
+        "nombre": "Arriendo de equipos",
+        "detalle": "Disponibilidad por día o periodo, con o sin operador según alcance."
+      },
+      {
+        "codigo": "13.7",
+        "nombre": "Renovación tecnológica",
+        "detalle": "Programas de reposición, actualización y acompañamiento de flota."
+      }
+    ],
+    "entregables": [
+      "Equipos y accesorios.",
+      "Licencias de software.",
+      "Contratos de soporte.",
+      "Reportes de mantenimiento o ajuste.",
+      "Equipos en arriendo.",
+      "Planes de renovación tecnológica."
+    ],
+    "aplicaciones": [
+      "Topografía y geomática.",
+      "Construcción.",
+      "Entidades públicas.",
+      "Industria.",
+      "Universidades.",
+      "Operadores de infraestructura."
+    ],
+    "tecnologias": [
+      "GNSS.",
+      "UAS y sensores.",
+      "TLS y SLAM.",
+      "Mobile Mapping.",
+      "Software geoespacial.",
+      "Accesorios y plataformas asociadas."
+    ],
+    "normativa": [
+      "Acuerdos de distribución vigentes.",
+      "Especificaciones y procedimientos del fabricante.",
+      "Requisitos regulatorios aplicables al equipo o uso final."
+    ],
+    "tarjeta": {
+      "titulo": "TECNOLOGÍA: DISTRIBUCIÓN, SOPORTE Y ARRIENDO",
+      "texto_corto": "Acceso a tecnología geoespacial con selección, suministro, soporte y continuidad operativa respaldados localmente.",
+      "contenido_visible": "EQUIPOS · SOFTWARE · SOPORTE · MANTENIMIENTO · ARRIENDO · RENOVACIÓN"
+    },
+    "slug": "tecnologia-distribucion-soporte-y-arriendo"
+  },
+  {
+    "nombre_linea": "Trazabilidad Geoespacial de Cadenas Agropecuarias",
+    "descripcion_corta": "Trazabilidad espacial del origen de productos agropecuarios mediante georreferenciación de parcelas, control de calidad y monitoreo de cobertura.",
+    "que_hacemos": "Estructuramos bases de parcelas y proveedores con evidencia geoespacial para demostrar origen, verificar condiciones de cobertura y sostener procesos de diligencia debida.",
+    "servicios_productos": [
+      {
+        "codigo": "14.1",
+        "nombre": "Georreferenciación de parcelas",
+        "detalle": "Captura de puntos o polígonos según requerimiento."
+      },
+      {
+        "codigo": "14.2",
+        "nombre": "Validación geométrica",
+        "detalle": "Control de traslapes, geometrías inválidas y duplicados."
+      },
+      {
+        "codigo": "14.3",
+        "nombre": "Verificación de no deforestación",
+        "detalle": "Análisis satelital desde la fecha de corte definida."
+      },
+      {
+        "codigo": "14.4",
+        "nombre": "Riesgo por parcela y proveedor",
+        "detalle": "Clasificación y soporte geoespacial del nivel de riesgo."
+      },
+      {
+        "codigo": "14.5",
+        "nombre": "Estructuración de datos para diligencia debida",
+        "detalle": "Preparación del conjunto de información requerido."
+      },
+      {
+        "codigo": "14.6",
+        "nombre": "Base de proveedores",
+        "detalle": "Consolidación, control de calidad y actualización."
+      },
+      {
+        "codigo": "14.7",
+        "nombre": "Monitoreo anual",
+        "detalle": "Seguimiento de cambios sobre parcelas registradas."
+      },
+      {
+        "codigo": "14.8",
+        "nombre": "Plataforma de consulta",
+        "detalle": "Visualización y consulta para exportador o comprador."
+      },
+      {
+        "codigo": "14.9",
+        "nombre": "Auditoría y capacitación",
+        "detalle": "Revisión de bases de terceros y formación de equipos de campo."
+      }
+    ],
+    "entregables": [
+      "Base georreferenciada de parcelas y proveedores.",
+      "Polígonos validados.",
+      "Evidencias satelitales.",
+      "Informes de riesgo.",
+      "Dataset para diligencia debida.",
+      "Reportes de monitoreo.",
+      "Plataforma o visor de consulta."
+    ],
+    "aplicaciones": [
+      "Café.",
+      "Cacao.",
+      "Palma.",
+      "Caucho.",
+      "Madera.",
+      "Ganadería y productos bovinos.",
+      "Exportadores y gremios agropecuarios."
+    ],
+    "tecnologias": [
+      "GNSS y captura de campo.",
+      "SIG.",
+      "Imágenes satelitales.",
+      "Detección de cambios.",
+      "Bases de datos y plataformas de consulta."
+    ],
+    "normativa": [
+      "Reglamento (UE) 2023/1115 – EUDR y modificaciones vigentes.",
+      "Requisitos de geolocalización y diligencia debida aplicables.",
+      "Protocolos de calidad y trazabilidad definidos para la cadena."
+    ],
+    "tarjeta": {
+      "titulo": "TRAZABILIDAD GEOESPACIAL DE CADENAS AGROPECUARIAS",
+      "texto_corto": "Trazabilidad espacial del origen de productos agropecuarios mediante georreferenciación de parcelas, control de calidad y monitoreo de cobertura.",
+      "contenido_visible": "PARCELAS · EUDR · TRAZABILIDAD · NO DEFORESTACIÓN · RIESGO · PROVEEDORES"
+    },
+    "slug": "trazabilidad-geoespacial-de-cadenas-agropecuarias"
+  },
+  {
+    "nombre_linea": "Agricultura y Ganadería de Precisión",
+    "descripcion_corta": "Información geoespacial para decisiones por sitio específico orientadas a productividad, uso eficiente de insumos y manejo del predio.",
+    "que_hacemos": "Integramos captura aérea, sensores, modelos de terreno y análisis espacial para caracterizar variabilidad, monitorear campañas y apoyar decisiones operativas del sector agropecuario.",
+    "servicios_productos": [
+      {
+        "codigo": "15.1",
+        "nombre": "Delimitación de lotes y unidades de manejo",
+        "detalle": "Levantamiento y organización espacial del predio."
+      },
+      {
+        "codigo": "15.2",
+        "nombre": "Mapas de vigor y variabilidad",
+        "detalle": "Zonificación del cultivo mediante información multiespectral."
+      },
+      {
+        "codigo": "15.3",
+        "nombre": "Conteo y censo de individuos",
+        "detalle": "Inventarios en cultivos perennes y plantaciones."
+      },
+      {
+        "codigo": "15.4",
+        "nombre": "Detección de estrés",
+        "detalle": "Identificación temprana de condiciones anómalas a partir de sensores."
+      },
+      {
+        "codigo": "15.5",
+        "nombre": "Mapas de prescripción",
+        "detalle": "Información base para aplicación diferenciada de insumos."
+      },
+      {
+        "codigo": "15.6",
+        "nombre": "Modelos de terreno y drenaje",
+        "detalle": "Nivelación, pendientes y diseño de drenaje predial."
+      },
+      {
+        "codigo": "15.7",
+        "nombre": "Praderas y ganadería",
+        "detalle": "Aforo, seguimiento de cobertura y apoyo a evaluación de capacidad de carga."
+      },
+      {
+        "codigo": "15.8",
+        "nombre": "Inventario forestal",
+        "detalle": "Estimación de individuos y volumen en plantaciones."
+      },
+      {
+        "codigo": "15.9",
+        "nombre": "Seguimiento de campaña",
+        "detalle": "Comparación multitemporal y evolución por temporada."
+      }
+    ],
+    "entregables": [
+      "Mapas de vigor y zonificación.",
+      "Inventarios y censos.",
+      "Mapas de prescripción.",
+      "Modelos de terreno.",
+      "Reportes multitemporales.",
+      "Bases de lotes y unidades de manejo.",
+      "Indicadores geoespaciales por hectárea."
+    ],
+    "aplicaciones": [
+      "Agroindustria de palma, caña, banano y arroz.",
+      "Plantaciones forestales.",
+      "Grandes haciendas ganaderas.",
+      "Ingenios y plantas extractoras.",
+      "Productores con manejo tecnificado."
+    ],
+    "tecnologias": [
+      "UAS / drones.",
+      "Sensores RGB y multiespectrales.",
+      "GNSS.",
+      "Modelos digitales del terreno.",
+      "SIG y analítica multitemporal."
+    ],
+    "normativa": [
+      "Protocolos de captura y calibración definidos para cada sensor.",
+      "Requerimientos del cliente y de la campaña agrícola.",
+      "Metodologías técnicas acordadas para cada indicador."
+    ],
+    "tarjeta": {
+      "titulo": "AGRICULTURA Y GANADERÍA DE PRECISIÓN",
+      "texto_corto": "Información geoespacial para decisiones por sitio específico orientadas a productividad, uso eficiente de insumos y manejo del predio.",
+      "contenido_visible": "MULTIESPECTRAL · VIGOR · CENSOS · PRESCRIPCIÓN · DRENAJE · MONITOREO"
+    },
+    "slug": "agricultura-y-ganaderia-de-precision"
+  },
+  {
+    "nombre_linea": "Defensa, Seguridad e Inteligencia Geoespacial",
+    "descripcion_corta": "Soluciones geoespaciales para conocimiento situacional, infraestructura crítica, áreas de difícil acceso y apoyo a seguridad y respuesta.",
+    "que_hacemos": "Integramos cartografía, monitoreo, sistemas de información y capacidades de captura para producir información geoespacial orientada a misiones, protección de activos y gestión de situaciones críticas.",
+    "servicios_productos": [
+      {
+        "codigo": "16.1",
+        "nombre": "Cartografía operacional",
+        "detalle": "Mapas y modelos de terreno de áreas de interés."
+      },
+      {
+        "codigo": "16.2",
+        "nombre": "Infraestructura crítica",
+        "detalle": "Documentación geoespacial de activos y corredores estratégicos."
+      },
+      {
+        "codigo": "16.3",
+        "nombre": "Monitoreo de áreas de difícil acceso",
+        "detalle": "Seguimiento satelital y detección de cambios."
+      },
+      {
+        "codigo": "16.4",
+        "nombre": "Detección de intervención territorial",
+        "detalle": "Identificación de vías, deforestación, movimiento de tierra u ocupación."
+      },
+      {
+        "codigo": "16.5",
+        "nombre": "Apoyo a emergencias y desastres",
+        "detalle": "Evaluación geoespacial de daños y situación."
+      },
+      {
+        "codigo": "16.6",
+        "nombre": "Sistemas de información geográfica",
+        "detalle": "Estructuración de plataformas, capas y flujos para entidades."
+      },
+      {
+        "codigo": "16.7",
+        "nombre": "Formación de operadores y analistas",
+        "detalle": "Capacitación técnica y transferencia de conocimiento."
+      },
+      {
+        "codigo": "16.8",
+        "nombre": "Soporte de plataformas",
+        "detalle": "Sostenimiento técnico de soluciones geoespaciales implementadas."
+      }
+    ],
+    "entregables": [
+      "Cartografía y modelos de terreno.",
+      "Bases y sistemas geoespaciales.",
+      "Reportes de cambio y monitoreo.",
+      "Información de infraestructura crítica.",
+      "Productos para evaluación de daños.",
+      "Capacitación y soporte técnico."
+    ],
+    "aplicaciones": [
+      "Entidades de defensa y seguridad.",
+      "Gestión del riesgo.",
+      "Infraestructura crítica.",
+      "Energía, hidrocarburos, transporte y agua.",
+      "Control territorial y ambiental."
+    ],
+    "tecnologias": [
+      "Imágenes satelitales.",
+      "UAS y sensores.",
+      "GNSS.",
+      "LiDAR.",
+      "SIG.",
+      "Analítica geoespacial."
+    ],
+    "normativa": [
+      "Requisitos de contratación y seguridad aplicables.",
+      "Controles de usuario final y exportación de tecnología cuando correspondan.",
+      "Procedimientos de custodia y manejo de información reservada definidos por el cliente."
+    ],
+    "tarjeta": {
+      "titulo": "DEFENSA, SEGURIDAD E INTELIGENCIA GEOESPACIAL",
+      "texto_corto": "Soluciones geoespaciales para conocimiento situacional, infraestructura crítica, áreas de difícil acceso y apoyo a seguridad y respuesta.",
+      "contenido_visible": "CARTOGRAFÍA · ISR GEOESPACIAL · SATÉLITE · INFRAESTRUCTURA CRÍTICA · SEGURIDAD"
+    },
+    "slug": "defensa-seguridad-e-inteligencia-geoespacial"
+  }
+]
