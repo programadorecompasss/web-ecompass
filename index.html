@@ -153,7 +153,9 @@ a.mega-card:hover h4{text-decoration:underline;text-decoration-color:var(--naran
 .cifras h2.title{color:#fff}
 .cifras .sub{color:#bbb}
 .cifras-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px;margin-top:50px}
-.cifra b{font-family:var(--display);font-size:clamp(3rem,6vw,4.5rem);font-weight:800;color:var(--naranja);line-height:1;display:block}
+.cifra b{font-family:var(--display);font-weight:800;line-height:1;display:flex;align-items:baseline;gap:.05em;flex-wrap:wrap}
+.cifra b .num{font-size:clamp(2.6rem,5.4vw,3.9rem);color:#fff;font-weight:800;text-transform:none;letter-spacing:0}
+.cifra b .plus{font-size:clamp(2.6rem,5.4vw,3.9rem);color:var(--naranja);font-weight:800;text-transform:none;letter-spacing:0}
 .cifra span{text-transform:uppercase;letter-spacing:.12em;font-size:.85rem;color:#ccc;font-weight:600}
 .cifra small{display:block;color:#999;font-size:.82rem;margin-top:4px}
 
@@ -624,10 +626,10 @@ body.mm-open .mm-backdrop{opacity:1;visibility:visible;pointer-events:auto}
     <div class="eyebrow">Nuestra trayectoria</div>
     <h2 class="title">Las cifras hablan por nosotros</h2>
     <div class="cifras-grid">
-      <div class="cifra"><b><span data-count="13">0</span>+</b><span>Años de experiencia</span><small>Liderando la geomática en Colombia</small></div>
-      <div class="cifra"><b><span data-count="170">0</span>+</b><span>Proyectos ejecutados</span><small>Sector público y privado</small></div>
-      <div class="cifra"><b><span data-count="100">0</span>+</b><span>Clientes satisfechos</span><small>Instituciones y empresas líderes</small></div>
-      <div class="cifra"><b><span data-count="16">0</span></b><span>Líneas de servicio</span><small>Soluciones geoespaciales integrales</small></div>
+      <div class="cifra"><b><span class="num" data-count="13">0</span><span class="plus">+</span></b><span>Años de experiencia</span><small>Liderando la geomática en Colombia</small></div>
+      <div class="cifra"><b><span class="num" data-count="170">0</span><span class="plus">+</span></b><span>Proyectos ejecutados</span><small>Sector público y privado</small></div>
+      <div class="cifra"><b><span class="num" data-count="100">0</span><span class="plus">+</span></b><span>Clientes satisfechos</span><small>Instituciones y empresas líderes</small></div>
+      <div class="cifra"><b><span class="num" data-count="16">0</span></b><span>Líneas de servicio</span><small>Soluciones geoespaciales integrales</small></div>
     </div>
   </div>
 </section>
