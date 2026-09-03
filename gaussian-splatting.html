@@ -169,7 +169,8 @@ body.mm-open .mm-backdrop{opacity:1;visibility:visible;pointer-events:auto}
 .mm-serv-head{font-family:var(--body);font-weight:700;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:#1a1a1a;padding-bottom:12px;border-bottom:1px solid var(--linea);margin-bottom:24px}
 .mm-serv-layout{display:grid;grid-template-columns:repeat(4,1fr) 256px;grid-template-rows:auto auto;gap:22px 30px;align-items:start}
 .mm-serv-col{display:flex;flex-direction:column;gap:16px;grid-row:1}
-.mm-serv-col a{font-family:var(--body);font-weight:500;font-size:.9rem;color:#1a1a1a;line-height:1.3;transition:color .15s ease}
+.mm-serv-col a{display:flex;align-items:flex-start;gap:9px;font-family:var(--body);font-weight:500;font-size:.9rem;color:#1a1a1a;line-height:1.3;transition:color .15s ease}
+.mm-serv-ico{flex:none;width:22px;height:22px;object-fit:contain;margin-top:1px}
 .mm-serv-col a:hover,.mm-serv-col a:focus-visible{color:var(--naranja)}
 .mm-serv-allbtn{grid-column:1 / 5;grid-row:2;justify-self:start;display:inline-block;border:1px solid var(--naranja);color:var(--naranja);background:transparent;font-family:var(--body);font-weight:700;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;padding:12px 22px;transition:background .2s ease,color .2s ease}
 .mm-serv-allbtn:hover{background:var(--naranja);color:#000}
@@ -246,28 +247,28 @@ body.mm-open .mm-backdrop{opacity:1;visibility:visible;pointer-events:auto}
         <div class="mm-serv-head">Servicios</div>
         <div class="mm-serv-layout">
           <div class="mm-serv-col">
-            <a href="servicios/control-geodesico-y-posicionamiento.html">Control Geodésico y Posicionamiento</a>
-            <a href="servicios/levantamientos-y-modelos-del-terreno.html">Levantamientos y Modelos del Terreno</a>
-            <a href="servicios/documentacion-digital-de-activos-existentes-as-built-scan-to-bim.html">Documentación Digital de Activos Existentes – As-Built / Scan to BIM</a>
-            <a href="servicios/inventarios-y-diagnostico-de-infraestructura.html">Inventarios y Diagnóstico de Infraestructura</a>
+            <a href="servicios/control-geodesico-y-posicionamiento.html"><img class="mm-serv-ico" src="img/pack-iconos-ecompass/06-gnss-topografia.png" alt="">Control Geodésico y Posicionamiento</a>
+            <a href="servicios/levantamientos-y-modelos-del-terreno.html"><img class="mm-serv-ico" src="img/pack-iconos-ecompass/07-fotogrametria.png" alt="">Levantamientos y Modelos del Terreno</a>
+            <a href="servicios/documentacion-digital-de-activos-existentes-as-built-scan-to-bim.html"><img class="mm-serv-ico" src="img/pack-iconos-ecompass/04-escaner-terrestre.png" alt="">Documentación Digital de Activos Existentes – As-Built / Scan to BIM</a>
+            <a href="servicios/inventarios-y-diagnostico-de-infraestructura.html"><img class="mm-serv-ico" src="img/pack-iconos-ecompass/15-inspeccion-infraestructura.png" alt="">Inventarios y Diagnóstico de Infraestructura</a>
           </div>
           <div class="mm-serv-col">
-            <a href="servicios/inspeccion-y-monitoreo.html">Inspección y Monitoreo</a>
-            <a href="servicios/soluciones-sig-y-gestion-de-informacion-geoespacial.html">Soluciones SIG y Gestión de Información Geoespacial</a>
-            <a href="servicios/datos-geoespaciales-como-producto-content-delivery.html">Datos Geoespaciales como Producto – Content Delivery</a>
-            <a href="servicios/catastro-multiproposito-y-gestion-predial.html">Catastro Multipropósito y Gestión Predial</a>
+            <a href="servicios/inspeccion-y-monitoreo.html"><img class="mm-serv-ico" src="img/pack-iconos-ecompass/01-dron-multirrotor.png" alt="">Inspección y Monitoreo</a>
+            <a href="servicios/soluciones-sig-y-gestion-de-informacion-geoespacial.html"><img class="mm-serv-ico" src="img/pack-iconos-ecompass/08-gis-cartografia.png" alt="">Soluciones SIG y Gestión de Información Geoespacial</a>
+            <a href="servicios/datos-geoespaciales-como-producto-content-delivery.html"><img class="mm-serv-ico" src="img/pack-iconos-ecompass/09-nube-de-puntos.png" alt="">Datos Geoespaciales como Producto – Content Delivery</a>
+            <a href="servicios/catastro-multiproposito-y-gestion-predial.html"><img class="mm-serv-ico" src="img/pack-iconos-ecompass/13-catastro.png" alt="">Catastro Multipropósito y Gestión Predial</a>
           </div>
           <div class="mm-serv-col">
-            <a href="servicios/cumplimiento-regulatorio-geoespacial.html">Cumplimiento Regulatorio Geoespacial</a>
-            <a href="servicios/redes-subterraneas-y-gestion-de-interferencias.html">Redes Subterráneas y Gestión de Interferencias</a>
-            <a href="servicios/observacion-de-la-tierra-y-monitoreo-satelital.html">Observación de la Tierra y Monitoreo Satelital</a>
-            <a href="servicios/habilitacion-tecnica-capacitacion-y-transferencia-de-conocimiento.html">Habilitación Técnica, Capacitación y Transferencia de Conocimiento</a>
+            <a href="servicios/cumplimiento-regulatorio-geoespacial.html"><img class="mm-serv-ico" src="img/pack-iconos-ecompass/11-procesamiento-datos.png" alt="">Cumplimiento Regulatorio Geoespacial</a>
+            <a href="servicios/redes-subterraneas-y-gestion-de-interferencias.html"><img class="mm-serv-ico" src="img/pack-iconos-ecompass/03-lidar.png" alt="">Redes Subterráneas y Gestión de Interferencias</a>
+            <a href="servicios/observacion-de-la-tierra-y-monitoreo-satelital.html"><img class="mm-serv-ico" src="img/pack-iconos-ecompass/02-dron-ala-fija.png" alt="">Observación de la Tierra y Monitoreo Satelital</a>
+            <a href="servicios/habilitacion-tecnica-capacitacion-y-transferencia-de-conocimiento.html"><img class="mm-serv-ico" src="img/pack-iconos-ecompass/12-capacitacion-soporte.png" alt="">Habilitación Técnica, Capacitación y Transferencia de Conocimiento</a>
           </div>
           <div class="mm-serv-col">
-            <a href="servicios/tecnologia-distribucion-soporte-y-arriendo.html">Tecnología: Distribución, Soporte y Arriendo</a>
-            <a href="servicios/trazabilidad-geoespacial-de-cadenas-agropecuarias.html">Trazabilidad Geoespacial de Cadenas Agropecuarias</a>
-            <a href="servicios/agricultura-y-ganaderia-de-precision.html">Agricultura y Ganadería de Precisión</a>
-            <a href="servicios/defensa-seguridad-e-inteligencia-geoespacial.html">Defensa, Seguridad e Inteligencia Geoespacial</a>
+            <a href="servicios/tecnologia-distribucion-soporte-y-arriendo.html"><img class="mm-serv-ico" src="img/pack-iconos-ecompass/05-mapeo-movil.png" alt="">Tecnología: Distribución, Soporte y Arriendo</a>
+            <a href="servicios/trazabilidad-geoespacial-de-cadenas-agropecuarias.html"><img class="mm-serv-ico" src="img/pack-iconos-ecompass/10-gemelo-digital.png" alt="">Trazabilidad Geoespacial de Cadenas Agropecuarias</a>
+            <a href="servicios/agricultura-y-ganaderia-de-precision.html"><img class="mm-serv-ico" src="img/pack-iconos-ecompass/14-agricultura-precision.png" alt="">Agricultura y Ganadería de Precisión</a>
+            <a href="servicios/defensa-seguridad-e-inteligencia-geoespacial.html"><img class="mm-serv-ico" src="img/pack-iconos-ecompass/16-ciudades-inteligentes.png" alt="">Defensa, Seguridad e Inteligencia Geoespacial</a>
           </div>
           <a class="mm-serv-allbtn" href="servicios.html">Ver todos los servicios &rarr;</a>
           <div class="mm-serv-feat">
